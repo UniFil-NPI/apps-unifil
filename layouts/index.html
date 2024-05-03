@@ -1,4 +1,6 @@
 {{ define "main" }}
+
+
 <div class="neon-globe"></div>
 <main>
   <div class="bg-gray-200 dark:bg-gray-900">
@@ -11,7 +13,7 @@
             {{ .Site.Title }}
           </h1>
           <h2 class="pb-2 text-3xl font-light text-gray-800 dark:text-gray-300 md:text-4xl">
-            {{ .Site.Params.Moto }}
+           Loja de aplicativos da UniFil
           </h2>
           <div class="grid grid-cols-2 md:grid-cols-4 md:space-x-4">
 
@@ -19,31 +21,23 @@
             <a href="tags/cc"
               class=" pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-blue-500 rounded-lg hover:bg-blue-600">
               <span class="mr-2">C.C</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                <circle cx="10" cy="10" r="8" fill="currentColor" />
-              </svg>
+              🔬
             </a>
 
             <a href="tags/es"
               class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-green-500 rounded-lg hover:bg-green-600">
               <span class="mr-2">ES</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                <circle cx="10" cy="10" r="8" fill="currentColor" />
-              </svg>
+              🧑‍🔬
             </a>
             <a href="tags/ads"
               class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-yellow-500 rounded-lg hover:bg-yellow-600">
-              <span class="mr-2">ADS</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                <circle cx="10" cy="10" r="8" fill="currentColor" />
-              </svg>
+              <span class="mr-2">ADS  📊</span>
+            
             </a>
             <a href="tags/ia"
               class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-red-500 rounded-lg hover:bg-red-600">
               <span class="mr-2">IA</span>
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-                <circle cx="10" cy="10" r="8" fill="currentColor" />
-              </svg>
+              🤖
             </a>
           </div>
         </div>
@@ -239,22 +233,23 @@
       <div class="relative px-2 mx-auto max-w-7xl">
         <div class="text-center">
           <h2 class="text-3xl font-black tracking-tight text-primary-500 dark:text-primary-300 sm:text-4xl">
-            {{ .Site.Params.P4.Heading }}
+            Projeto de extensão
           </h2>
-          {{ range .Site.Params.P4.Content }}
-          <p class="max-w-2xl mx-auto mt-3 text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
-            {{ .text }}
-          </p>
-          {{ end }}
+          
+          <p class=" mx-auto mt-3 text-xl text-gray-500 dark:text-gray-300 sm:mt-4">
+            A extensão na UniFil busca conectar a instituição com a sociedade, compartilhando conhecimento adquirido por meio de ensino e pesquisa. Coordenada pela PROEIC, é realizada de forma interdisciplinar, aberta à participação pública, visando difundir as conquistas culturais e científicas da universidade. É um processo educativo, cultural e científico que integra ensino, pesquisa e ação, promovendo interação e complementaridade entre diferentes áreas de conhecimento. Além disso, a UniFil oferece diversas atividades como cursos, congressos e palestras, promovendo a educação continuada e demonstrando responsabilidade social com a comunidade.
+            </p>
+          
         </div>
 
-        <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5">
+        <div class=" mx-auto text-gray-900 max-w-7xl dark:text-gray-50 md:px-1.5">
           <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
             <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3" id="postContainer">
               {{ range $index, $element := (.Paginator).Pages }}
-              <div
-                class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900 {{ if gt $index 2 }}hidden{{ end }}">
-                <a href="{{$element.Permalink}}">
+              <div data-route="{{$element.Permalink}}"
+                class=" post-container flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900 {{ if gt $index 2 }}hidden{{ end }}">
+                <a href="{{$element.Permalink}}" >
+                  {{$element.Permalink}}
                   {{ with $element.Params.featured_image }}
                   {{ with resources.Get . }}
                   {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
@@ -273,36 +268,21 @@
                       {{$element.Params.summary}}
                     </p>
                   </div>
-                  <div class="flex pt-6 font-medium text-orange dark:text-primary-100 text-md overflow-x-auto">
+                  <div class=" pt-6 font-medium text-orange dark:text-primary-100 text-md ">
                     <span class="pr-2 font-black">Tags:</span>
                     {{ range $elem_index, $elem_val := ($element.GetTerms "tags") }}
                     {{ if gt $elem_index 0 }} {{ end }}
                     <a style="margin-left: 4px;" href="{{$elem_val.Permalink}}"
                       class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900">{{$elem_val.LinkTitle}}</a>
-                    {{ end }}
-                  </div>
-                  <div class="flex items-center mt-6">
-                    <div class="flex-shrink-0">
-                      <span class="sr-only">{{$element.Params.author}}</span>
-                      {{ with $element.Params.authorimage }}
-                      {{ with resources.Get . }}
-                      {{ $authorimage := (.Resize "400x webp").RelPermalink }}
-                      <img class="w-10 h-10 rounded-full" src="{{$authorimage}}" alt="">
+                    
                       {{ end }}
-                      {{ end }}
-                    </div>
-                    <div class="pt-1 ml-3">
-                      <p class="text-sm font-medium text-gray-900 dark:text-white">
-                        {{$element.Params.author}}
-                      </p>
-                      <div class="flex space-x-1 text-sm text-gray-500 dark:text-white">
-                        <time datetime="2020-02-12">{{$element.Date.Format "2006-01-02"}}</time>
-                        <span aria-hidden="true">&middot;</span>
-                        <span>{{ math.Round (div (countwords $element.Content) 220.0) }} min read</span>
-                      </div>
-                    </div>
                   </div>
+                  <div class="p-6">
+                    <!-- Your existing post content -->
+                    <button onclick="addLike('{{$element.Permalink}}')" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Like</button>
+                  </div>    
                 </div>
+                     
               </div>
               {{ end }}
             </div>
@@ -346,5 +326,90 @@
     link.style.setProperty('--pulse-duration', `${randomDuration}s`);
   });
 </script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
 
+<script>
+ 
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDmK3Shq6G_grLAWK3dB_Q2VKB5kRaufqo",
+      authDomain: "apps-unifil.firebaseapp.com",
+      databaseURL: "https://apps-unifil-default-rtdb.firebaseio.com",
+      projectId: "apps-unifil",
+      storageBucket: "apps-unifil.appspot.com",
+      messagingSenderId: "1047227536957",
+      appId: "1:1047227536957:web:b708c2cf31c46f53737c54",
+      measurementId: "G-SH4W4RJM2J"
+    };
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+ 
+
+    var db = firebase.firestore();
+    function updateVisits(route) {
+const pageRef = db.collection('pages').doc(route);
+pageRef.set({
+visits: firebase.firestore.FieldValue.increment(1)
+}, { merge: true });
+}
+
+function addLike(route) {
+  route = route.replace(/\/{2,}/g, '/');
+const pageRef = db.collection('pages').doc(route);
+pageRef.set({
+likes: firebase.firestore.FieldValue.increment(1)
+}, { merge: true });
+}
+
+function getStats(route, containerId) {
+    if (!route) {
+        console.log("Route is undefined");
+        return;
+    }
+    const pageRef = db.collection('pages').doc(route);
+    pageRef.get().then((doc) => {
+        if (doc.exists) {
+            var visits = doc.data().visits;
+            var likes = doc.data().likes;
+            var statsHtml = "<div>Visits: " + visits + "</div><div>Likes: " + likes + "</div>";
+            document.getElementById(containerId).innerHTML = statsHtml;
+        } else {
+            console.log("No data found for route: " + route);
+        }
+    }).catch((error) => {
+        console.log("Error getting document:", error);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to load stats when the div is loaded
+    function loadStats() {
+    var elements = document.getElementsByClassName("post-container");
+    for (var i = 0; i < elements.length; i++) {
+        var permalink = elements[i].getAttribute("data-route");
+        console.log("Permalink for post " + i + ": " + permalink);
+        if (!permalink) {
+            console.log("Permalink is null or undefined for post " + i);
+            continue;
+        }
+
+        // Sanitize the permalink to remove double slashes
+        permalink = permalink.replace(/\/{2,}/g, '/');
+
+        console.log("Sanitized Permalink for post " + i + ": " + permalink);
+
+        var statsDiv = document.createElement("div");
+        statsDiv.id = "stats_for_post_" + i;
+        elements[i].appendChild(statsDiv);
+        getStats(permalink, "stats_for_post_" + i);
+    }
+}
+
+    // Call the loadStats function when the div is loaded
+    loadStats();
+});
+</script>
 {{ end }}
