@@ -1,12 +1,13 @@
 {{define "main"}}
 <article>
-  <header class="mb-4 bg-primary-600">
+  <header class="mb-4 bg-orange">
     <span class="py-96">
       <h1 class="py-16 text-5xl font-black text-center text-white capitalize">
         {{ .Title }}
       </h1>
     </span>
   </header>
+  
   <div class="max-w-4xl mx-auto mt-8 mb-2">
     <div class="px-6">
       {{ with .Params.featured_image }}
@@ -22,29 +23,43 @@
         {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
            class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
            width="100%" alt="{{ .Params.title }}" />
-           <div class= " grid grid-cols-2 md:grid-cols-4 md:space-x-4">
-                      
-                        
-            <a href="" class=" pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-green-500 rounded-lg hover:bg-green-600">
-              <span class="mr-2">Baixe para Android</span>
-              
-            </a>
+           
+      {{ end }}
+      
+      {{ end }}
+      <div class= "rounded-lg text-sm justify-between flex overflow-y-auto scrollbar w-full">
           
-          <a href="tags/es" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-yellow-500 rounded-lg hover:bg-yellow-600">
-              <span class="mr-2">Baixe para IOS</span>
-              
-            </a>
-          <a href="tags/ads" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-blue-500 rounded-lg hover:bg-blue-600">
-              <span class="mr-2">Baixe para Windows</span>
-              
-            </a>
-          <a href="tags/ia" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-red-500 rounded-lg hover:bg-red-600">
-              <span class="mr-2">Acesse Online</span>
-              
-            </a>
-      </div>
-      {{ end }}
-      {{ end }}
+        {{ if .Params.linkandroid }}
+        <a href="{{ .Params.linkandroid }}" class=" pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative  bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center;" >
+          <span class="mr-2">Download Android</span>
+        </a>
+        {{ end }}
+        
+        {{ if .Params.linkios }}
+        <a href="{{ .Params.linkios }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+          <span class="mr-2">Download iOS</span>
+        </a>
+        {{ end }}
+        
+        {{ if .Params.linkweb }}
+        <a href="{{ .Params.linkweb }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+          <span >Download Windows</span>
+        </a>
+        {{ end }}
+        
+        {{ if .Params.linkblog }}
+        <a href="{{ .Params.linkblog }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+          <span class="mr-2">Acesse o Blogger</span>
+        </a>
+        {{ end }}
+        
+        {{ if .Params.linkvideo }}
+        <a href="{{ .Params.linkvideo }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white  w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+          <span class="mr-2">Assista ao Vídeo</span>
+        </a>
+        {{ end }}
+        
+  </div>
     </div>
   </div>
   <!-- " {{.Content}}" pulls from the markdown content of the corresponding _index.md -->
