@@ -9,7 +9,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus
 author: TailBliss
 authorimage: ../assets/images/global/author.webp
 categories: blog
-tags: blog
+tags: ["blog"]
 ---
 __Advertisement :smile:__
 

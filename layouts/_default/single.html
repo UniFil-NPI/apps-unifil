@@ -22,6 +22,27 @@
         {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
            class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
            width="100%" alt="{{ .Params.title }}" />
+           <div class= " grid grid-cols-2 md:grid-cols-4 md:space-x-4">
+                      
+                        
+            <a href="" class=" pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-green-500 rounded-lg hover:bg-green-600">
+              <span class="mr-2">Baixe para Android</span>
+              
+            </a>
+          
+          <a href="tags/es" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-yellow-500 rounded-lg hover:bg-yellow-600">
+              <span class="mr-2">Baixe para IOS</span>
+              
+            </a>
+          <a href="tags/ads" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-blue-500 rounded-lg hover:bg-blue-600">
+              <span class="mr-2">Baixe para Windows</span>
+              
+            </a>
+          <a href="tags/ia" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white bg-red-500 rounded-lg hover:bg-red-600">
+              <span class="mr-2">Acesse Online</span>
+              
+            </a>
+      </div>
       {{ end }}
       {{ end }}
     </div>
