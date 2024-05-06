@@ -246,10 +246,10 @@
           <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
             <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3" id="postContainer">
               {{ range $index, $element := (.Paginator).Pages }}
-              <div data-route="{{$element.Permalink}}"
-                class=" post-container flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900 {{ if gt $index 2 }}hidden{{ end }}">
+              <div data-route="{{$element.Permalink}} " 
+                class=" post-container  gray-shadow dark:orange-shadow  flex flex-col overflow-hidden rounded-lg  bg-gray-50 dark:bg-gray-900 {{ if gt $index 2 }}hidden{{ end }}">
                 <a href="{{$element.Permalink}}" >
-                  {{$element.Permalink}}
+                
                   {{ with $element.Params.featured_image }}
                   {{ with resources.Get . }}
                   {{ $postimage := (.Resize "500x webp q90").RelPermalink }}
@@ -268,7 +268,7 @@
                       {{$element.Params.summary}}
                     </p>
                   </div>
-                  <div class=" pt-6 font-medium text-orange dark:text-primary-100 text-md ">
+                  <div class="  pt-6 font-medium text-orange dark:text-primary-100 text-md ">
                     <span class="pr-2 font-black">Tags:</span>
                     {{ range $elem_index, $elem_val := ($element.GetTerms "tags") }}
                     {{ if gt $elem_index 0 }} {{ end }}
@@ -276,11 +276,7 @@
                       class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900">{{$elem_val.LinkTitle}}</a>
                     
                       {{ end }}
-                  </div>
-                  <div class="p-6">
-                    <!-- Your existing post content -->
-                    <button onclick="addLike('{{$element.Permalink}}')" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Like</button>
-                  </div>    
+                  </div> 
                 </div>
                      
               </div>
@@ -296,8 +292,8 @@
         <script>
           const loadMoreButton = document.getElementById('loadMoreButton');
           const postContainer = document.getElementById('postContainer');
-          const hiddenPosts = document.querySelectorAll('.hidden');
-
+          const hiddenPosts = postContainer.querySelectorAll('.hidden');
+        
           loadMoreButton.addEventListener('click', () => {
             hiddenPosts.forEach(post => {
               post.classList.remove('hidden');
@@ -305,7 +301,6 @@
             loadMoreButton.style.display = 'none';
           });
         </script>
-
       </div>
     </div>
 
@@ -349,15 +344,17 @@
  
 
     var db = firebase.firestore();
-    function updateVisits(route) {
-const pageRef = db.collection('pages').doc(route);
-pageRef.set({
-visits: firebase.firestore.FieldValue.increment(1)
-}, { merge: true });
+function updateVisits(route) {
+  const pageRef = db.collection('pages').doc(route);
+  pageRef.set({
+  visits: firebase.firestore.FieldValue.increment(1)
+  }, { merge: true });
 }
 
 function addLike(route) {
   route = route.replace(/\/{2,}/g, '/');
+  route = route.split('/'); // Split the route into segments
+  route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
 const pageRef = db.collection('pages').doc(route);
 pageRef.set({
 likes: firebase.firestore.FieldValue.increment(1)
@@ -374,8 +371,8 @@ function getStats(route, containerId) {
         if (doc.exists) {
             var visits = doc.data().visits;
             var likes = doc.data().likes;
-            var statsHtml = "<div>Visits: " + visits + "</div><div>Likes: " + likes + "</div>";
-            document.getElementById(containerId).innerHTML = statsHtml;
+            var statsHtml = "<div ><span style='color: orange; font-weight: bold;'>👁️  " + visits + "</span><span style='float: right; color: orange; font-weight: bold;'>👍 " + likes + "</span></div>";
+   document.getElementById(containerId).innerHTML = statsHtml;
         } else {
             console.log("No data found for route: " + route);
         }
@@ -383,30 +380,33 @@ function getStats(route, containerId) {
         console.log("Error getting document:", error);
     });
 }
-
 document.addEventListener('DOMContentLoaded', function() {
     // Function to load stats when the div is loaded
     function loadStats() {
-    var elements = document.getElementsByClassName("post-container");
-    for (var i = 0; i < elements.length; i++) {
-        var permalink = elements[i].getAttribute("data-route");
-        console.log("Permalink for post " + i + ": " + permalink);
-        if (!permalink) {
-            console.log("Permalink is null or undefined for post " + i);
-            continue;
+        var elements = document.getElementsByClassName("post-container");
+        for (var i = 0; i < elements.length; i++) {
+            var permalink = elements[i].getAttribute("data-route");
+            console.log("Permalink for post " + i + ": " + permalink);
+            if (!permalink) {
+                console.log("Permalink is null or undefined for post " + i);
+                continue;
+            }
+
+            // Sanitize the permalink to remove double slashes
+            permalink = permalink.replace(/\/{2,}/g, '/');
+            
+            // Extract just the desired part (/template/)
+            var routeSegments = permalink.split('/');
+            var route = routeSegments[routeSegments.length - 2];
+            console.log("Sanitized Permalink for post " + i + ": " + route);
+
+            var statsDiv = document.createElement("div");
+statsDiv.id = "stats_for_post_" + i;
+statsDiv.style.marginTop = "auto"; // Apply margin-top: auto; to the statsDiv
+            elements[i].appendChild(statsDiv);
+            getStats(route, "stats_for_post_" + i); // Pass the extracted route instead of the full permalink
         }
-
-        // Sanitize the permalink to remove double slashes
-        permalink = permalink.replace(/\/{2,}/g, '/');
-
-        console.log("Sanitized Permalink for post " + i + ": " + permalink);
-
-        var statsDiv = document.createElement("div");
-        statsDiv.id = "stats_for_post_" + i;
-        elements[i].appendChild(statsDiv);
-        getStats(permalink, "stats_for_post_" + i);
     }
-}
 
     // Call the loadStats function when the div is loaded
     loadStats();

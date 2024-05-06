@@ -1,4 +1,5 @@
 {{define "main"}}
+
 <article>
   <header class="mb-4 bg-orange">
     <span class="py-96">
@@ -9,7 +10,14 @@
   </header>
   
   <div class="max-w-4xl mx-auto mt-8 mb-2">
+    <div class="text-right mb-4">
+      <!-- Insert your like button HTML code here -->
+      <!-- For example: -->
+    
+  </div>
     <div class="px-6">
+      <button onclick="addLike('{{ .RelPermalink }}')" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Like</button>
+
       {{ with .Params.featured_image }}
       {{ with resources.Get . }}
       {{ $small := (.Resize "400x webp q80").RelPermalink }}
@@ -27,6 +35,7 @@
       {{ end }}
       
       {{ end }}
+      
       <div class= "rounded-lg text-sm justify-between flex overflow-y-auto scrollbar w-full">
           
         {{ if .Params.linkandroid }}
@@ -67,4 +76,48 @@
     {{.Content}}
   </div>
 </article>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+<script>
+   const firebaseConfig = {
+      apiKey: "AIzaSyDmK3Shq6G_grLAWK3dB_Q2VKB5kRaufqo",
+      authDomain: "apps-unifil.firebaseapp.com",
+      databaseURL: "https://apps-unifil-default-rtdb.firebaseio.com",
+      projectId: "apps-unifil",
+      storageBucket: "apps-unifil.appspot.com",
+      messagingSenderId: "1047227536957",
+      appId: "1:1047227536957:web:b708c2cf31c46f53737c54",
+      measurementId: "G-SH4W4RJM2J"
+    };
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+ 
+
+    var db = firebase.firestore();
+function updateVisits(route) {
+  
+  route = route.replace(/\/{2,}/g, '/');
+  route = route.split('/'); // Split the route into segments
+  route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
+ 
+  const pageRef = db.collection('pages').doc(route);
+  pageRef.set({
+  visits: firebase.firestore.FieldValue.increment(1)
+  }, { merge: true });
+}
+console.log("{{ .RelPermalink }}");
+updateVisits('{{ .RelPermalink }}');
+
+function addLike(route) {
+  route = route.replace(/\/{2,}/g, '/');
+  route = route.split('/'); // Split the route into segments
+  route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
+const pageRef = db.collection('pages').doc(route);
+pageRef.set({
+likes: firebase.firestore.FieldValue.increment(1)
+}, { merge: true });
+}
+</script>
+
 {{end}}
