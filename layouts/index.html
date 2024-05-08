@@ -158,7 +158,7 @@
             </div>
           </div>
           
-          <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+          <!-- <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <symbol id="mcdonalds" viewBox="0 0 24 24">
                 <path d="M17.243 3.006c2.066 0 3.742 8.714 3.742 19.478H24c0-11.588-3.042-20.968-6.766-20.968-2.127 0-4.007 2.81-5.248 7.227-1.241-4.416-3.121-7.227-5.231-7.227C3.031 1.516 0 10.888 0 22.476h3.014c0-10.763 1.658-19.47 3.724-19.47 2.066 0 3.741 8.05 3.741 17.98h2.997c0-9.93 1.684-17.98 3.75-17.98Z" />
@@ -192,7 +192,7 @@
                 <path d="M14.707 15.957h1.912V8.043h-1.912zm-3.357-2.256a.517.517 0 01-.512.511H9.727a.517.517 0 01-.512-.511v-3.19H7.303v3.345c0 1.368.879 2.09 2.168 2.09h1.868c1.189 0 1.912-.856 1.912-2.09V10.51h-1.912c.01 0 .01 3.09.01 3.19zm10.75-3.19v3.19a.517.517 0 01-.512.511h-1.112a.517.517 0 01-.511-.511v-3.19h-1.912v3.345c0 1.368.878 2.09 2.167 2.09h1.868c1.19 0 1.912-.856 1.912-2.09V10.51zm-18.32 0H2.557c-.434 0-.645.11-.645.11V8.044H0v7.903h1.9v-3.179c0-.278.234-.511.512-.511h1.112c.278 0 .511.233.511.511v3.19h1.912v-3.446c0-1.445-.967-2-2.167-2Z" />
               </symbol>
             </defs>
-          </svg>
+          </svg> -->
     </div>
 
       </div>
@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             var statsDiv = document.createElement("div");
 statsDiv.id = "stats_for_post_" + i;
-statsDiv.className = "stats-div"; // Add a class for styling
+statsDiv.className = "stats-post"; // Add a class for styling
 statsDiv.style.marginTop = "auto"; // Apply margin-top: auto; to the statsDiv
             elements[i].appendChild(statsDiv);
             getStats(route, "stats_for_post_" + i); // Pass the extracted route instead of the full permalink
