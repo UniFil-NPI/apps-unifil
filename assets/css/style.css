@@ -4330,6 +4330,16 @@ EmojiSymbols;
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
+.stats-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px; /* Adjust this value as needed */
+  margin-right: 10px; /* Adjust this value as needed */
+  background-color: rgba(255, 255, 255, 0.8); /* Background color */
+  padding: 5px 10px; /* Padding around the statistics */
+  border-radius: 5px; /* Rounded corners */
+}
 .gray-shadow{
   box-shadow: 0px 0px 6px 3px gray;
 }

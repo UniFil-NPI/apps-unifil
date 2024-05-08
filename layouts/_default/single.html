@@ -16,7 +16,8 @@
     
   </div>
     <div class="px-6">
-      <button onclick="addLike('{{ .RelPermalink }}')" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Like</button>
+      <div class="status" id="stats"></div>
+      <button style="float:right;" onclick="addLike('{{ .RelPermalink }}')" class="mt-2 px-4 py-2 font-bold text-white bg-orange-button text-white rounded-md  focus:outline-none focus:bg-blue-600">Gostei 💖</button>
 
       {{ with .Params.featured_image }}
       {{ with resources.Get . }}
@@ -95,7 +96,7 @@
  
 
     var db = firebase.firestore();
-function updateVisits(route) {
+    function updateVisits(route) {
   
   route = route.replace(/\/{2,}/g, '/');
   route = route.split('/'); // Split the route into segments
@@ -108,7 +109,6 @@ function updateVisits(route) {
 }
 console.log("{{ .RelPermalink }}");
 updateVisits('{{ .RelPermalink }}');
-
 function addLike(route) {
   route = route.replace(/\/{2,}/g, '/');
   route = route.split('/'); // Split the route into segments
@@ -118,6 +118,8 @@ pageRef.set({
 likes: firebase.firestore.FieldValue.increment(1)
 }, { merge: true });
 }
+
+
 </script>
 
 {{end}}

@@ -362,6 +362,7 @@ likes: firebase.firestore.FieldValue.increment(1)
 }
 
 function getStats(route, containerId) {
+  
     if (!route) {
         console.log("Route is undefined");
         return;
@@ -371,7 +372,7 @@ function getStats(route, containerId) {
         if (doc.exists) {
             var visits = doc.data().visits;
             var likes = doc.data().likes;
-            var statsHtml = "<div ><span style='color: orange; font-weight: bold;'>👁️  " + visits + "</span><span style='float: right; color: orange; font-weight: bold;'>👍 " + likes + "</span></div>";
+            var statsHtml = "<div ><span style='color: orange; font-weight: bold;'>👁️  " + visits + "</span><span style='; color: orange; font-weight: bold;'>👍 " + likes + "</span></div>";
    document.getElementById(containerId).innerHTML = statsHtml;
         } else {
             console.log("No data found for route: " + route);
@@ -402,6 +403,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             var statsDiv = document.createElement("div");
 statsDiv.id = "stats_for_post_" + i;
+statsDiv.className = "stats-div"; // Add a class for styling
 statsDiv.style.marginTop = "auto"; // Apply margin-top: auto; to the statsDiv
             elements[i].appendChild(statsDiv);
             getStats(route, "stats_for_post_" + i); // Pass the extracted route instead of the full permalink
