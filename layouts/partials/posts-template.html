@@ -3,7 +3,7 @@
         
         <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
             {{ range .Paginator.Pages }}
-            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
+            <div class="  gray-shadow dark:orange-shadow  flex flex-col overflow-hidden rounded-lg  bg-gray-50 dark:bg-gray-900 ">
                 <a href="{{.Permalink}}">
                     {{ with .Params.featured_image }}
                     {{ with resources.Get . }}
