@@ -4331,7 +4331,7 @@ EmojiSymbols;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
 .stats-post{
- 
+ float: right;
 }
 .gray-shadow{
   box-shadow: 0px 0px 6px 3px gray;

@@ -117,6 +117,7 @@ const pageRef = db.collection('pages').doc(route);
 pageRef.set({
 likes: firebase.firestore.FieldValue.increment(1)
 }, { merge: true });
+location.reload();
 }
 
 
