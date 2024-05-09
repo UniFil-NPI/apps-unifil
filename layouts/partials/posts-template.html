@@ -1,8 +1,9 @@
 <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50">
     <div class="px-4 not-prose">
+        
         <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3">
             {{ range .Paginator.Pages }}
-            <div class="flex flex-col overflow-hidden rounded-lg shadow-lg bg-gray-50 dark:bg-gray-900">
+            <div class="  gray-shadow dark:orange-shadow  flex flex-col overflow-hidden rounded-lg  bg-gray-50 dark:bg-gray-900 ">
                 <a href="{{.Permalink}}">
                     {{ with .Params.featured_image }}
                     {{ with resources.Get . }}
@@ -14,6 +15,9 @@
                     {{ end }}
                 </a>
                 <div class="p-6">
+                    <div class="post-container"  data-route="{{.Permalink}} ">  
+
+                    </div>
                     <div class="flex-1">
                         <a href="{{.Permalink}}"
                            class="block mt-2 text-2xl font-black text-gray-900 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-500 hover:underline">
@@ -23,41 +27,99 @@
                             {{ .Params.summary }}
                         </p>
                     </div>
-                    <div class="flex pt-6 font-medium text-primary-600 dark:text-primary-100 text-md">
+                    <div class=" pt-6 font-medium text-orange dark:text-primary-100 text-md ">
                         <span class="pr-2 font-black">Tags:</span>
                         <span>
                         {{ range $elem_index, $elem_val := (.GetTerms "tags") }}
-                        {{- if gt $elem_index 0 }}, {{ end -}}
-                        <a href="{{ .Permalink }}"
-                           class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900 capitalize">{{ .LinkTitle }}</a>
+                        {{- if gt $elem_index 0 }} {{ end -}}
+                        <a style="margin-left: 4px;" href="{{$elem_val.Permalink}}"
+                        class="inline-flex items-center rounded-md bg-gray-300 hover:bg-primary-200 hover:text-black px-2.5 py-0.5 text-sm font-medium text-gray-900">{{$elem_val.LinkTitle}}</a>
                         {{- end -}}
                         </span>
                     </div>
-                    <div class="flex items-center mt-6">
-                        <div class="flex-shrink-0">
-                            <span class="sr-only">{{ .Params.author }}</span>
-                            {{ with .Params.authorimage }}
-                            {{ with resources.Get . }}
-                            {{ $authorimage := (.Resize "40x webp").RelPermalink }}
-                            <img class="w-10 h-10 rounded-full" src="{{ $authorimage }}" alt="">
-                            {{ end }}
-                            {{ end }}
-                        </div>
-                        <div class="pt-1 ml-3">
-                            <p class="text-sm font-medium text-gray-900 dark:text-white">
-                                {{ .Params.author }}
-                            </p>
-                            <div class="flex space-x-1 text-sm text-gray-500 dark:text-white">
-                                <time datetime="2020-02-12">{{.Date.Format "2006-01-02"}}</time>
-                                <span aria-hidden="true">&middot;</span>
-                                <span>{{ math.Round (div (countwords .Content) 220.0) }}
-                                    min read</span>
-                            </div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
             {{ end }}
         </div>
     </div>
 </div>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+
+<script>
+ 
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDmK3Shq6G_grLAWK3dB_Q2VKB5kRaufqo",
+      authDomain: "apps-unifil.firebaseapp.com",
+      databaseURL: "https://apps-unifil-default-rtdb.firebaseio.com",
+      projectId: "apps-unifil",
+      storageBucket: "apps-unifil.appspot.com",
+      messagingSenderId: "1047227536957",
+      appId: "1:1047227536957:web:b708c2cf31c46f53737c54",
+      measurementId: "G-SH4W4RJM2J"
+    };
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+ 
+
+    var db = firebase.firestore();
+
+    
+function getStats(route, containerId) {
+  
+  if (!route) {
+      console.log("Route is undefined");
+      return;
+  }
+  const pageRef = db.collection('pages').doc(route);
+  pageRef.get().then((doc) => {
+      if (doc.exists) {
+          var visits = doc.data().visits;
+          var likes = doc.data().likes;
+          var statsHtml = "<div ><span style='color: orange; font-weight: bold;'>👁️  " + visits + "</span><span style='; color: orange; font-weight: bold;'>👍 " + likes + "</span></div>";
+ document.getElementById(containerId).innerHTML = statsHtml;
+      } else {
+          console.log("No data found for route: " + route);
+      }
+  }).catch((error) => {
+      console.log("Error getting document:", error);
+  });
+}
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to load stats when the div is loaded
+    function loadStats() {
+        var elements = document.getElementsByClassName("post-container");
+        for (var i = 0; i < elements.length; i++) {
+            var permalink = elements[i].getAttribute("data-route");
+            
+            console.log("Permalink for post " + i + ": " + permalink);
+            if (!permalink) {
+                console.log("Permalink is null or undefined for post " + i);
+                continue;
+            }
+
+            // Sanitize the permalink to remove double slashes
+            permalink = permalink.replace(/\/{2,}/g, '/');
+            
+            // Extract just the desired part (/template/)
+            var routeSegments = permalink.split('/');
+            var route = routeSegments[routeSegments.length - 2];
+            console.log("Sanitized Permalink for post " + i + ": " + route);
+
+            var statsDiv = document.createElement("div");
+statsDiv.id = "stats_for_post_" + i;
+statsDiv.className = "stats-post"; // Add a class for styling
+statsDiv.style.marginTop = "auto"; // Apply margin-top: auto; to the statsDiv
+            elements[i].appendChild(statsDiv);
+            getStats(route, "stats_for_post_" + i); // Pass the extracted route instead of the full permalink
+        }
+    }
+
+    // Call the loadStats function when the div is loaded
+    loadStats();
+});
+</script>

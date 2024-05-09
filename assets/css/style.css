@@ -473,7 +473,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: #F29400;
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -3077,6 +3077,12 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
+.bg-orange-button{
+  background-color: #f1641f;
+}
+.bg-orange-button:hover{
+  background: #ff4500
+}
 
 .bg-gray-900 {
   --tw-bg-opacity: 1;
@@ -3097,7 +3103,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(48 52 236 / var(--tw-bg-opacity));
 }
+.bg-orange{
+  background-color: #f1641f;
 
+}
 .bg-transparent {
   background-color: transparent;
 }
@@ -3434,7 +3443,11 @@ video {
   --tw-text-opacity: 1;
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
+.text-orange{
+  --tw-text-opacity: 1;
+  color: #f1641f;
 
+}
 .text-primary-600 {
   --tw-text-opacity: 1;
   color: rgb(48 52 236 / var(--tw-text-opacity));
@@ -4139,6 +4152,10 @@ EmojiSymbols;
   background-color: rgb(48 52 236 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-orange:hover {
+  --tw-bg-opacity: 1;
+  background-color: #f1641f;
+}
 .hover\:bg-primary-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(14 17 158 / var(--tw-bg-opacity));
@@ -4182,6 +4199,10 @@ EmojiSymbols;
   background-color: rgb(48 52 236 / var(--tw-bg-opacity));
 }
 
+.focus\:bg-orange:focus {
+  --tw-bg-opacity: 1;
+  background-color: #f1641f;
+}
 .focus\:bg-primary-700:focus {
   --tw-bg-opacity: 1;
   background-color: rgb(19 23 209 / var(--tw-bg-opacity));
@@ -4309,7 +4330,16 @@ EmojiSymbols;
   --tw-bg-opacity: 1;
   background-color: rgb(79 70 229 / var(--tw-bg-opacity));
 }
-
+.stats-post{
+ float: right;
+}
+.gray-shadow{
+  box-shadow: 0px 0px 6px 3px gray;
+}
+.dark\:orange-shadow:is(.dark *) {
+  
+  box-shadow: 0px 0px 6px 3px #f1a714
+}
 .dark\:text-gray-200:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
@@ -4397,7 +4427,10 @@ EmojiSymbols;
   --tw-text-opacity: 1;
   color: rgb(99 102 241 / var(--tw-text-opacity));
 }
-
+.dark\:hover\:text-orange:hover:is(.dark *) {
+  --tw-text-opacity: 1;
+  background-color: #f1641f;
+}
 .dark\:focus\:border-indigo-500:focus:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(99 102 241 / var(--tw-border-opacity));
@@ -4895,7 +4928,7 @@ EmojiSymbols;
 
 
 :root {
-  --color-text: navy;
+  --color-text: #F29400;
   --color-bg: papayawhip;
   --color-bg-accent: #ecdcc0;
   --size: clamp(10rem, 1rem + 40vmin, 30rem);
@@ -4907,9 +4940,9 @@ EmojiSymbols;
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-text: papayawhip;
-    --color-bg: navy;
-    --color-bg-accent: #2626a0;
+    --color-text: #707173;
+    --color-bg: #F29400;
+    --color-bg-accent: #F29400;
   }
 }
 
@@ -5087,3 +5120,23 @@ EmojiSymbols;
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Apply pulse animation to links */
+.pulse-link {
+  animation: pulse var(--pulse-duration) var(--pulse-delay) infinite;
+}

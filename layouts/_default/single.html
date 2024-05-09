@@ -1,20 +1,32 @@
 {{define "main"}}
+
 <article>
-  <header class="mb-4 bg-primary-600">
+  <header class="mb-4 bg-orange">
     <span class="py-96">
       <h1 class="py-16 text-5xl font-black text-center text-white capitalize">
         {{ .Title }}
       </h1>
     </span>
   </header>
+  
   <div class="max-w-4xl mx-auto mt-8 mb-2">
+    <div class="text-right mb-4">
+      <!-- Insert your like button HTML code here -->
+      <!-- For example: -->
+    
+  </div>
     <div class="px-6">
+      <div class="status" id="stats"></div>
+      <button style="float:right;" onclick="addLike('{{ .RelPermalink }}')" class="mt-2 px-4 py-2 font-bold text-white bg-orange-button text-white rounded-md  focus:outline-none focus:bg-blue-600">Gostei 💖</button>
+
       {{ with .Params.featured_image }}
       {{ with resources.Get . }}
       {{ $small := (.Resize "400x webp q80").RelPermalink }}
       {{ $medium := (.Resize "550x webp q80").RelPermalink }}
       {{ $large := (.Resize "900x webp q80").RelPermalink }}
       {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+      <div id="stats" class="stats-container"></div>
+      
       <img src="{{ $featuredimage }}" srcset="
         {{- with $small -}}, {{.}} 400w{{- end -}}
         {{- with $medium -}}, {{.}} 550w{{- end -}}
@@ -22,8 +34,44 @@
         {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
            class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
            width="100%" alt="{{ .Params.title }}" />
+           
       {{ end }}
+      
       {{ end }}
+      
+      <div class= "rounded-lg text-sm justify-between flex overflow-y-auto scrollbar w-full">
+          
+        {{ if .Params.linkandroid }}
+        <a href="{{ .Params.linkandroid }}" class=" pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative  bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center;" >
+          <span class="mr-2">Download Android</span>
+        </a>
+        {{ end }}
+        
+        {{ if .Params.linkios }}
+        <a href="{{ .Params.linkios }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+          <span class="mr-2">Download iOS</span>
+        </a>
+        {{ end }}
+        
+        {{ if .Params.linkweb }}
+        <a href="{{ .Params.linkweb }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+          <span >Download Windows</span>
+        </a>
+        {{ end }}
+        
+        {{ if .Params.linkblog }}
+        <a href="{{ .Params.linkblog }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+          <span class="mr-2">Acesse o Blogger</span>
+        </a>
+        {{ end }}
+        
+        {{ if .Params.linkvideo }}
+        <a href="{{ .Params.linkvideo }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white  w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+          <span class="mr-2">Assista ao Vídeo</span>
+        </a>
+        {{ end }}
+        
+  </div>
     </div>
   </div>
   <!-- " {{.Content}}" pulls from the markdown content of the corresponding _index.md -->
@@ -31,4 +79,104 @@
     {{.Content}}
   </div>
 </article>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
+<script>
+   const firebaseConfig = {
+      apiKey: "AIzaSyDmK3Shq6G_grLAWK3dB_Q2VKB5kRaufqo",
+      authDomain: "apps-unifil.firebaseapp.com",
+      databaseURL: "https://apps-unifil-default-rtdb.firebaseio.com",
+      projectId: "apps-unifil",
+      storageBucket: "apps-unifil.appspot.com",
+      messagingSenderId: "1047227536957",
+      appId: "1:1047227536957:web:b708c2cf31c46f53737c54",
+      measurementId: "G-SH4W4RJM2J"
+    };
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+ 
+
+    var db = firebase.firestore();
+    function updateVisits(route) {
+  route = route.replace(/\/{2,}/g, '/');
+  route = route.split('/'); // Split the route into segments
+  route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
+
+  // Check if the page has already been visited by the user
+  var visited = localStorage.getItem(route + '_visited');
+  if (!visited) {
+    // If not visited, increment the visit count and mark the page as visited
+    const pageRef = db.collection('pages').doc(route);
+    pageRef.set({
+      visits: firebase.firestore.FieldValue.increment(1)
+    }, { merge: true }).then(() => {
+      console.log("Visits updated successfully for route:", route);
+      // Mark the page as visited in local storage
+      localStorage.setItem(route + '_visited', true);
+    }).catch((error) => {
+      console.error("Error updating visits for route:", route, error);
+    });
+  }
+}
+
+
+updateVisits('{{ .RelPermalink }}');
+function addLike(route) {
+  route = route.replace(/\/{2,}/g, '/');
+  route = route.split('/'); // Split the route into segments
+  route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
+
+  // Check if the page has already been liked by the user
+  var liked = localStorage.getItem(route + '_liked');
+  if (!liked) {
+    // If not liked, increment the like count and mark the page as liked
+    const pageRef = db.collection('pages').doc(route);
+    pageRef.set({
+      likes: firebase.firestore.FieldValue.increment(1)
+    }, { merge: true }).then(() => {
+      console.log("Like added successfully for route:", route);
+      // Mark the page as liked in local storage
+      localStorage.setItem(route + '_liked', true);
+      location.reload(); // Reload the page
+    }).catch((error) => {
+      console.error("Error adding like for route:", route, error);
+    });
+  }
+}
+
+function getStats(route, containerId) {
+    if (!route) {
+        console.log("Route is undefined");
+        return;
+    }
+
+    const pageRef = db.collection('pages').doc(route);
+    pageRef.get().then((doc) => {
+    if (doc.exists) {
+      console.log("Document data:", doc.data());
+      var visits = doc.data().visits;
+      var likes = doc.data().likes;
+      var statsHtml = "<div></span><span style='color: orange; font-weight: bold;float:left'> 👍 " + likes + "</span></div>";
+      document.getElementById(containerId).innerHTML = statsHtml;
+    } else {
+      console.log("No data found for route:", route);
+    }
+  }).catch((error) => {
+    console.error("Error getting document:", error);
+  });
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var route = "{{ .RelPermalink  }}";
+  console.log("Original route:", route);
+  route = route.replace(/\/{2,}/g, '/');
+  route = route.split('/'); // Split the route into segments
+  route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
+  console.log("Processed route:", route);
+  getStats(route, "stats");
+});
+
+
+</script>
+
 {{end}}

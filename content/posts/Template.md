@@ -1,16 +1,21 @@
 ---
-title: "Blog Post 4"
-date: 2021-12-18T11:10:36+08:00
+title: "Nome do projeto"
 draft: false
-language: en
+language: pt-br
 featured_image: ../assets/images/featured/featured-img-placeholder.png
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero.
-description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus, odio nec venenatis lacinia, lacus lectus varius nisi, in tristique mi purus ut libero. Vestibulum vel convallis felis. Ut finibus lorem vestibulum lobortis rhoncus.
-author: TailBliss
+summary: Sumário de seu projeto
+author: Unifil
 authorimage: ../assets/images/global/author.webp
-categories: blog
-tags: blog
+categories: Blog
+tags: ["CC", "ES", "ADS", "IA", "Educação", "Tecnologia", "Ciência", "Saúde", "Cultura", "Entretenimento"] 
+linkandroid: link  de download do aplicativo em android
+linkios: link de download aplicativo em ios
+linkweb: link de acesso de aplicativo web
+linkblog: Link do blog
+linkvideo: Link do video/ caminho
+
 ---
+
 __Advertisement :smile:__
 
 - __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
@@ -21,6 +26,8 @@ __Advertisement :smile:__
 You will like those projects!
 
 ---
+
+# ABAIXO O CONTEÙDO DE EXPLICAÇÂO DE SEU APLICATIVO
 
 # h1 Heading :blush:
 ## h2 Heading
@@ -186,7 +193,7 @@ see [how to change output](https://github.com/markdown-it/markdown-it-emoji#chan
 
 ### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
 
-- 19^th^
+- X^2^
 - H~2~O
 
 
@@ -255,3 +262,4 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 *here be dragons*
 :::
+
