@@ -25,6 +25,8 @@
       {{ $medium := (.Resize "550x webp q80").RelPermalink }}
       {{ $large := (.Resize "900x webp q80").RelPermalink }}
       {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+      <div id="stats" class="stats-container"></div>
+
       <img src="{{ $featuredimage }}" srcset="
         {{- with $small -}}, {{.}} 400w{{- end -}}
         {{- with $medium -}}, {{.}} 550w{{- end -}}
@@ -97,28 +99,82 @@
 
     var db = firebase.firestore();
     function updateVisits(route) {
-  
   route = route.replace(/\/{2,}/g, '/');
   route = route.split('/'); // Split the route into segments
   route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
- 
-  const pageRef = db.collection('pages').doc(route);
-  pageRef.set({
-  visits: firebase.firestore.FieldValue.increment(1)
-  }, { merge: true });
+
+  // Check if the page has already been visited by the user
+  var visited = localStorage.getItem(route + '_visited');
+  if (!visited) {
+    // If not visited, increment the visit count and mark the page as visited
+    const pageRef = db.collection('pages').doc(route);
+    pageRef.set({
+      visits: firebase.firestore.FieldValue.increment(1)
+    }, { merge: true }).then(() => {
+      console.log("Visits updated successfully for route:", route);
+      // Mark the page as visited in local storage
+      localStorage.setItem(route + '_visited', true);
+    }).catch((error) => {
+      console.error("Error updating visits for route:", route, error);
+    });
+  }
 }
-console.log("{{ .RelPermalink }}");
+
+
 updateVisits('{{ .RelPermalink }}');
 function addLike(route) {
   route = route.replace(/\/{2,}/g, '/');
   route = route.split('/'); // Split the route into segments
   route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
-const pageRef = db.collection('pages').doc(route);
-pageRef.set({
-likes: firebase.firestore.FieldValue.increment(1)
-}, { merge: true });
-location.reload();
+
+  // Check if the page has already been liked by the user
+  var liked = localStorage.getItem(route + '_liked');
+  if (!liked) {
+    // If not liked, increment the like count and mark the page as liked
+    const pageRef = db.collection('pages').doc(route);
+    pageRef.set({
+      likes: firebase.firestore.FieldValue.increment(1)
+    }, { merge: true }).then(() => {
+      console.log("Like added successfully for route:", route);
+      // Mark the page as liked in local storage
+      localStorage.setItem(route + '_liked', true);
+      location.reload(); // Reload the page
+    }).catch((error) => {
+      console.error("Error adding like for route:", route, error);
+    });
+  }
 }
+
+function getStats(route, containerId) {
+    if (!route) {
+        console.log("Route is undefined");
+        return;
+    }
+
+    const pageRef = db.collection('pages').doc(route);
+    pageRef.get().then((doc) => {
+    if (doc.exists) {
+      console.log("Document data:", doc.data());
+      var visits = doc.data().visits;
+      var likes = doc.data().likes;
+      var statsHtml = "<div></span><span style='color: orange; font-weight: bold;float:left'> 👍 " + likes + "</span></div>";
+      document.getElementById(containerId).innerHTML = statsHtml;
+    } else {
+      console.log("No data found for route:", route);
+    }
+  }).catch((error) => {
+    console.error("Error getting document:", error);
+  });
+}
+document.addEventListener('DOMContentLoaded', function() {
+  var route = "{{ .RelPermalink  }}";
+  console.log("Original route:", route);
+  route = route.replace(/\/{2,}/g, '/');
+  route = route.split('/'); // Split the route into segments
+  route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
+  console.log("Processed route:", route);
+  getStats(route, "stats");
+});
 
 
 </script>

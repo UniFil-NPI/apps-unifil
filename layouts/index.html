@@ -246,7 +246,7 @@
           <div class="px-4 text-gray-900 dark:text-white not-prose dark:text-zinc-200">
             <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3" id="postContainer">
               {{ range $index, $element := (.Paginator).Pages }}
-              <div data-route="{{$element.Permalink}} " 
+              <div 
                 class="  gray-shadow dark:orange-shadow  flex flex-col overflow-hidden rounded-lg  bg-gray-50 dark:bg-gray-900 {{ if gt $index 2 }}hidden{{ end }}">
               
                 <a href="{{$element.Permalink}}" >
@@ -391,6 +391,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var elements = document.getElementsByClassName("post-container");
         for (var i = 0; i < elements.length; i++) {
             var permalink = elements[i].getAttribute("data-route");
+            
             console.log("Permalink for post " + i + ": " + permalink);
             if (!permalink) {
                 console.log("Permalink is null or undefined for post " + i);
