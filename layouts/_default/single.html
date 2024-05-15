@@ -1,4 +1,5 @@
 {{define "main"}}
+<head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /></head>
 
 <article>
   <header class="mb-4 bg-orange">
@@ -16,8 +17,8 @@
     
   </div>
     <div class="px-6">
-      <div class="status" id="stats"></div>
-      <button style="float:right;" onclick="addLike('{{ .RelPermalink }}')" class="mt-2 px-4 py-2 font-bold text-white bg-orange-button text-white rounded-md  focus:outline-none focus:bg-blue-600">Gostei 💖</button>
+      
+      <button  id="stats" style="float:right;" onclick="addLike('{{ .RelPermalink }}')" class="mt-2 px-4 py-2 font-bold text-white bg-orange-button text-white rounded-md  focus:outline-none "></button>
 
       {{ with .Params.featured_image }}
       {{ with resources.Get . }}
@@ -39,40 +40,63 @@
       
       {{ end }}
       
-      <div class= "rounded-lg text-sm justify-between flex overflow-y-auto scrollbar w-full">
+      <div class= " text-sm  flex ">
           
         {{ if .Params.linkandroid }}
-        <a href="{{ .Params.linkandroid }}" class=" pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative  bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center;" >
+        <a href="{{ .Params.linkandroid }}" class=" rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative  bg-orange-button" style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center;" >
           <span class="mr-2">Download Android</span>
         </a>
         {{ end }}
         
         {{ if .Params.linkios }}
-        <a href="{{ .Params.linkios }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+        <a href="{{ .Params.linkios }}" class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
           <span class="mr-2">Download iOS</span>
         </a>
         {{ end }}
         
         {{ if .Params.linkweb }}
-        <a href="{{ .Params.linkweb }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+        <a href="{{ .Params.linkweb }}" class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
           <span >Download Windows</span>
         </a>
         {{ end }}
         
         {{ if .Params.linkblog }}
-        <a href="{{ .Params.linkblog }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+        <a href="{{ .Params.linkblog }}" class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
           <span class="mr-2">Acesse o Blogger</span>
         </a>
         {{ end }}
         
         {{ if .Params.linkvideo }}
-        <a href="{{ .Params.linkvideo }}" class="pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white  w-full relative bg-orange-button" style="box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+        <a href="{{ .Params.linkvideo }}" class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white  w-full relative bg-orange-button" style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
           <span class="mr-2">Assista ao Vídeo</span>
         </a>
         {{ end }}
         
   </div>
     </div>
+
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+   
+    var disqus_config = function () {
+    this.page.url = '{{ .RelPermalink }}';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = '{{ .RelPermalink }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://appstoreunifil.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
   </div>
   <!-- " {{.Content}}" pulls from the markdown content of the corresponding _index.md -->
   <div class="max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white">
@@ -157,7 +181,7 @@ function getStats(route, containerId) {
       console.log("Document data:", doc.data());
       var visits = doc.data().visits;
       var likes = doc.data().likes;
-      var statsHtml = "<div></span><span style='color: orange; font-weight: bold;float:left'> 👍 " + likes + "</span></div>";
+      var statsHtml = "<div> <span class='material-symbols-outlined' style='padding-left: 6px;'>thumb_up</span></span><span style='color: orange; font-weight: bold;'><span style='color: white; font-weight: bold;float:left'> " + likes + "</span></div>";
       document.getElementById(containerId).innerHTML = statsHtml;
     } else {
       console.log("No data found for route:", route);
@@ -178,5 +202,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 </script>
-
+<script id="dsq-count-scr" src="//appstoreunifil.disqus.com/count.js" async></script>
 {{end}}

@@ -1,3 +1,5 @@
+<head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /></head>
+
 <div class="mx-auto text-gray-900 max-w-7xl dark:text-gray-50">
     <div class="px-4 not-prose">
         
@@ -80,8 +82,8 @@ function getStats(route, containerId) {
       if (doc.exists) {
           var visits = doc.data().visits;
           var likes = doc.data().likes;
-          var statsHtml = "<div ><span style='color: orange; font-weight: bold;'>👁️  " + visits + "</span><span style='; color: orange; font-weight: bold;'>👍 " + likes + "</span></div>";
- document.getElementById(containerId).innerHTML = statsHtml;
+          var statsHtml = "<div > <span class='material-symbols-outlined ' style='color: orange'>visibility</span> <span style='color: orange; font-weight: bold;'>" + " "+ visits + "   "+" <span class='material-symbols-outlined' style='padding-left: 6px;'>thumb_up</span></span><span style='; color: orange; font-weight: bold;'>" + likes + "</span></div>";
+  document.getElementById(containerId).innerHTML = statsHtml;
       } else {
           console.log("No data found for route: " + route);
       }
