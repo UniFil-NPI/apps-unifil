@@ -5,14 +5,13 @@ language: pt-br
 featured_image: images/featured/featured-img-placeholder.png 
 summary: Sumário de seu projeto
 author: Unifil
-authorimage: images/global/author.webp
 categories: Blog
 tags: ["CC", "ES", "ADS", "IA", "Educação", "Tecnologia", "Ciência", "Saúde", "Cultura", "Entretenimento"] 
 linkandroid: link  de download do aplicativo em android
 linkios: link de download aplicativo em ios
 linkweb: link de acesso de aplicativo web
 linkblog: Link do blog
-linkvideo: Link do video/ caminho
+linkvideo: Link do video
 
 ---
 
