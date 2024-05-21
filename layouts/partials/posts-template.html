@@ -48,11 +48,8 @@
 </div>
 <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
-
 <script>
- 
     // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
       apiKey: "AIzaSyDmK3Shq6G_grLAWK3dB_Q2VKB5kRaufqo",
       authDomain: "apps-unifil.firebaseapp.com",
@@ -66,62 +63,65 @@
   
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
- 
-
-    var db = firebase.firestore();
-
-    
-function getStats(route, containerId) {
   
-  if (!route) {
-      console.log("Route is undefined");
-      return;
-  }
-  const pageRef = db.collection('pages').doc(route);
-  pageRef.get().then((doc) => {
-      if (doc.exists) {
-          var visits = doc.data().visits;
-          var likes = doc.data().likes;
-          var statsHtml = "<div > <span class='material-symbols-outlined ' style='color: orange'>visibility</span> <span style='color: orange; font-weight: bold;'>" + " "+ visits + "   "+" <span class='material-symbols-outlined' style='padding-left: 6px;'>thumb_up</span></span><span style='; color: orange; font-weight: bold;'>" + likes + "</span></div>";
-  document.getElementById(containerId).innerHTML = statsHtml;
-      } else {
-          console.log("No data found for route: " + route);
+    var db = firebase.firestore();
+  
+    function getStats(route, containerId) {
+      if (!route) {
+        console.log("Route is undefined");
+        return;
       }
-  }).catch((error) => {
-      console.log("Error getting document:", error);
-  });
-}
-document.addEventListener('DOMContentLoaded', function() {
-    // Function to load stats when the div is loaded
-    function loadStats() {
+      const pageRef = db.collection('pages').doc(route);
+      pageRef.get().then((doc) => {
+        var visits = 0;
+        var likes = 0;
+        if (doc.exists) {
+          visits = doc.data().visits || 0;
+          likes = doc.data().likes || 0;
+        } else {
+          console.log("No data found for route: " + route);
+        }
+        var statsHtml = "<div> <span class='material-symbols-outlined' style='color: orange;'>visibility</span> <span style='color: orange; font-weight: bold;'>" + " " + visits + "   " + " <span class='material-symbols-outlined' style='padding-left: 6px;'>thumb_up</span></span><span style='color: orange; font-weight: bold; padding-left: 3px'>" + likes + "</span></div>";
+        document.getElementById(containerId).innerHTML = statsHtml;
+      }).catch((error) => {
+        console.log("Error getting document:", error);
+        var statsHtml = "<div> <span class='material-symbols-outlined' style='color: orange;'>visibility</span> <span style='color: orange; font-weight: bold;'> 0 <span class='material-symbols-outlined' style='padding-left: 6px;'>thumb_up</span></span><span style='color: orange; font-weight: bold; padding-left: 3px'>0</span></div>";
+        document.getElementById(containerId).innerHTML = statsHtml;
+      });
+    }
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      // Function to load stats when the div is loaded
+      function loadStats() {
         var elements = document.getElementsByClassName("post-container");
         for (var i = 0; i < elements.length; i++) {
-            var permalink = elements[i].getAttribute("data-route");
-            
-            console.log("Permalink for post " + i + ": " + permalink);
-            if (!permalink) {
-                console.log("Permalink is null or undefined for post " + i);
-                continue;
-            }
-
-            // Sanitize the permalink to remove double slashes
-            permalink = permalink.replace(/\/{2,}/g, '/');
-            
-            // Extract just the desired part (/template/)
-            var routeSegments = permalink.split('/');
-            var route = routeSegments[routeSegments.length - 2];
-            console.log("Sanitized Permalink for post " + i + ": " + route);
-
-            var statsDiv = document.createElement("div");
-statsDiv.id = "stats_for_post_" + i;
-statsDiv.className = "stats-post"; // Add a class for styling
-statsDiv.style.marginTop = "auto"; // Apply margin-top: auto; to the statsDiv
-            elements[i].appendChild(statsDiv);
-            getStats(route, "stats_for_post_" + i); // Pass the extracted route instead of the full permalink
+          var permalink = elements[i].getAttribute("data-route");
+  
+          console.log("Permalink for post " + i + ": " + permalink);
+          if (!permalink) {
+            console.log("Permalink is null or undefined for post " + i);
+            continue;
+          }
+  
+          // Sanitize the permalink to remove double slashes
+          permalink = permalink.replace(/\/{2,}/g, '/');
+  
+          // Extract just the desired part (/template/)
+          var routeSegments = permalink.split('/');
+          var route = routeSegments[routeSegments.length - 2];
+          console.log("Sanitized Permalink for post " + i + ": " + route);
+  
+          var statsDiv = document.createElement("div");
+          statsDiv.id = "stats_for_post_" + i;
+          statsDiv.className = "stats-post"; // Add a class for styling
+          statsDiv.style.marginTop = "auto"; // Apply margin-top: auto; to the statsDiv
+          elements[i].appendChild(statsDiv);
+          getStats(route, "stats_for_post_" + i); // Pass the extracted route instead of the full permalink
         }
-    }
-
-    // Call the loadStats function when the div is loaded
-    loadStats();
-});
-</script>
+      }
+  
+      // Call the loadStats function when the div is loaded
+      loadStats();
+    });
+  </script>
+  
