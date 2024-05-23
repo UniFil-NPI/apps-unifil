@@ -248,7 +248,7 @@
             <div class="grid gap-4 mx-auto mt-12 mb-4 lg:max-w-none md:grid-cols-3" id="postContainer">
               {{ range $index, $element := (.Paginator).Pages }}
               <div 
-                class="  gray-shadow dark:orange-shadow  flex flex-col overflow-hidden rounded-lg  bg-gray-50 dark:bg-gray-900 {{ if gt $index 2 }}hidden{{ end }}">
+                class="  gray-shadow dark:orange-shadow  flex flex-col overflow-hidden rounded-lg  bg-gray-50 dark:bg-gray-900 {{ if gt $index 8 }}hidden{{ end }}">
               
                 <a href="{{$element.Permalink}}" >
                 
@@ -266,7 +266,7 @@
                       {{- with $large -}}, {{.}} 768w{{- end -}}
                       {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
                        class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
-                       width="100%" alt="{{ .Params.title }}" />
+                       width="100%" style="object-fit: cover;height: 400px;  width: 100%;" alt="{{ .Params.title }}" />
                   {{ end }}
                 {{ end }}
                 </a>
