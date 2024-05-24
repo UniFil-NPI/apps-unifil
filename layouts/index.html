@@ -228,7 +228,7 @@
                   {{ with .Params.featured_image }}
                   {{ with resources.Get . }}
                  {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink | absURL }}
-                  <img src="{{ $featuredimage }}" alt="{{ .Title }}" />
+                  <img src="{{ $featuredimage }}" alt="{{ .Title }}" style="object-fit: cover;height: 400px;  width: 100%;" />
                   {{ end }}
                   {{ end }}
                 </a>
