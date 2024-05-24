@@ -105,29 +105,39 @@ measurementId: "G-SH4W4RJM2J"
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-var db = firebase.firestore();
+var db = firebase.firestore();function updateVisits(route) {
+  // Normaliza a rota para garantir consistência
+  route = route.replace(/\/{2,}/g, '/').split('/').filter(part => part.length > 0).pop();
 
-function updateVisits(route) {
-route = route.replace(/\/{2,}/g, '/');
-route = route.split('/'); // Split the route into segments
-route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
+  // Verifica se o usuário já visitou a página
+  var visited = localStorage.getItem(route + '_visited');
 
-// Check if the page has already been visited by the user
-var visited = localStorage.getItem(route + '_visited');
-if (!visited) {
-// If not visited, increment the visit count and mark the page as visited
-const pageRef = db.collection('pages').doc(route);
-pageRef.set({
-  visits: firebase.firestore.FieldValue.increment(1)
-}, { merge: true }).then(() => {
-  console.log("Visits updated successfully for route:", route);
-  // Mark the page as visited in local storage
-  localStorage.setItem(route + '_visited', true);
-}).catch((error) => {
-  console.error("Error updating visits for route:", route, error);
+  if (!visited) {
+    // Marca como visitado no localStorage
+    localStorage.setItem(route + '_visited', 'true');
+
+    const pageRef = db.collection('pages').doc(route);
+    pageRef.set({
+      visits: firebase.firestore.FieldValue.increment(1)
+    }, { merge: true })
+    .then(() => {
+      console.log("Visits updated successfully for route:", route);
+    })
+    .catch((error) => {
+      console.error("Error updating visits for route:", route, error);
+    });
+  } else {
+    console.log("Route already visited:", route);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  var route = "{{ .RelPermalink }}";
+  route = route.replace(/\/{2,}/g, '/');
+  route = route.split('/').filter(part => part.length > 0).pop();
+  console.log("Processed route for visit update:", route);
+  updateVisits(route);
 });
-}
-}
 
 function addLike(route) {
 route = route.replace(/\/{2,}/g, '/');
