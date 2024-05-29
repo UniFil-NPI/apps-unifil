@@ -2,7 +2,7 @@
 title: "NewFake"
 draft: false
 language: pt-br
-featured_image: ../assets/images/featured/featured-img-placeholder.png
+featured_image:
 summary: Na diciplina de Práticas de Extensão, nós estudantes precisamos desenvolver um projeto que será compartilhado publicamente, para usufruto do corpo social. O NewFake será um aplicativo estilo HackerNews, mas voltado para o público leigo a tecnologia. Publicaremos, de forma automatizada ou não, informações sobre Databases vazadas, vulnerabilidades novas e dicas no geral para a segurança do usuário. Estaremos atendendo a comunidade e ajudando, por exemplo, possíveis vitimas de leaks feitos por hackers.
 author: André Vitor Bigaran, Gustavo Ramos, Lorena Milani, Lucas Henrique
 authorimage: ../assets/images/global/author.webp
