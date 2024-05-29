@@ -9,7 +9,7 @@ categories: Blog
 tags: ["CC", "ES", "ADS", "Tecnologia", "Alocação"] 
 linkweb: https://github.com/lucasdeoliveiraaraujo/Noxus-sistema
 linkblog: https://lucasdeoliveiraaraujo.github.io/Noxus/dist
-linkvideo: Link do video
+
 
 
 ---
