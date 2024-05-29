@@ -4,7 +4,7 @@ language: pt-br
 author: Caio Matsumoto, Davi Carvalho, Felipe Campos, Felipe Toledo, Sergio Tanaka
 featured_image: images/featured/they_need_to_know_him_logo.png
 categories: Blog
-tags: ["ES", "Educação", "Tecnologia", "Ciência", "Cultura", "Entretenimento", "Quiz", "Bíblia", "Jesus"] 
+tags: ["ES", "Educação", "Tecnologia", "Ciência", "Cultura", "Entretenimento", "Quiz"] 
 linkweb: http://152.67.42.182:8000/
 linkblog: https://theyneedtoknowhim1.blogspot.com/
 linkvideo: https://www.youtube.com/watch?v=x8KiqWdMukQ

@@ -12,15 +12,12 @@ tags:
     "CC",
     "ES",
     "ADS",
-    "IA",
     "Educação",
     "Tecnologia",
     "Ciência",
     "Saúde",
     "Cultura",
     "Entretenimento",
-    "LonHeal",
-    "Mapa",
   ]
 
 linkweb: http://144.22.163.65

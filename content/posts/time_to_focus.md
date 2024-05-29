@@ -7,7 +7,7 @@ summary: Um projeto feito para a extensão curricular com o propósito de aument
 author: Unifil
 authorimage: ../assets/images/global/author.webp
 categories: Blog
-tags: ["CC", "ES", "Educação", "Tecnologia", "Ciência", "Saúde", "Entretenimento"] 
+tags: ["CC", "ES", "Educação", "Tecnologia", "Saúde"] 
 linkweb: http://138.2.241.170/
 
 ---

@@ -5,7 +5,7 @@ language: pt-br
 featured_image: images/featured/FlashFlare.png
 author: Everton Kenji Ikeda
 categories: Blog
-tags: ["ES", "Software", "Educação", "Tecnologia", "Estudo", "Cultura", "Memorização"] 
+tags: ["ES", "Educação", "Tecnologia", "Cultura", "Entretenimento"] 
 linkweb: https://chromewebstore.google.com/detail/flashflare/cdndnipipmkfljhkaoaekgpklglmiajl?hl=pt-BR
 linkblog: https://flashflareextension.blogspot.com/
 linkvideo: https://youtu.be/nUy1gHdYU6Y

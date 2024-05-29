@@ -7,7 +7,7 @@ summary: O CoinCare é um projeto de Extensão Curricular Universitária da UniF
 author: Unifil
 authorimage: ../assets/images/global/author.webp
 categories: Blog
-tags: ["CC", "ES", "Educação", "Tecnologia", "Ciência", "Finanças", "Economia"]
+tags: ["CC", "ES", "Educação", "Tecnologia", "Ciência", "Economia"]
 linkweb: http://168.138.155.172/
 linkblog: https://extensaocoincare.blog/
 linkvideo: https://youtu.be/WW5-WlQRqAI

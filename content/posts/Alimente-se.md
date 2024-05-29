@@ -7,8 +7,7 @@ summary: "Somos um projeto que visa combater a fome e o desperdício de alimento
 author: Unifil
 authorimage: ../assets/images/global/author.webp
 categories: Blog
-tags:
-  ["CC", "Educação", "Tecnologia", "Saúde", "Cultura",]
+tags: ["CC", "Educação", "Tecnologia", "Saúde", "Cultura"]
 linkweb: "http://168.138.158.159/"
 linkblog: "https://alimenteseldbr.blogspot.com/"
 linkvideo: "https://www.youtube.com/watch?v=V0ydUjUK9Gg"
