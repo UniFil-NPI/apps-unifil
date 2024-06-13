@@ -1,5 +1,6 @@
 ---
 title: "SimpleJourney"
+important: 4
 draft: false
 language: pt-br
 summary: Projeto dedicado para compartilhar experiencias relacionadas ao aprendizado dentro da área de programação.

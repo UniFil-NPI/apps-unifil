@@ -1,6 +1,7 @@
 ---
 title: "Nome do projeto"
 draft: false
+important: 6
 language: pt-br
 featured_image: images/featured/featured-img-placeholder.png 
 summary: Sumário de seu projeto

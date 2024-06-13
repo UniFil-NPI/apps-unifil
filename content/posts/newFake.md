@@ -1,6 +1,7 @@
 ---
 title: "NewFake"
 draft: false
+important: 6
 language: pt-br
 featured_image:
 summary: Na diciplina de Práticas de Extensão, nós estudantes precisamos desenvolver um projeto que será compartilhado publicamente, para usufruto do corpo social. O NewFake será um aplicativo estilo HackerNews, mas voltado para o público leigo a tecnologia. Publicaremos, de forma automatizada ou não, informações sobre Databases vazadas, vulnerabilidades novas e dicas no geral para a segurança do usuário. Estaremos atendendo a comunidade e ajudando, por exemplo, possíveis vitimas de leaks feitos por hackers.

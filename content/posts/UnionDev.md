@@ -1,8 +1,9 @@
 ---
 title: "AutoLead - UnionDev"
 draft: false
+important: 1
 language: pt-br
-featured_image: 
+featured_image: images/featured/uniondev.png
 summary: Este projeto oferece uma solução automatizada e eficiente para pesquisas de locais, utilizando as poderosas funcionalidades da API do Google Maps integradas com a interação facilitada pelo Telebot. A criação e envio de arquivos CSV proporcionam uma maneira estruturada e acessível de visualizar os resultados, atendendo a diversas necessidades de usuários e empresas.
 author: Unifil
 categories: Blog

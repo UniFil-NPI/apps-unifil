@@ -1,6 +1,7 @@
 ---
 title: "PharmeCalc"
 draft: false
+important: 1
 language: pt-br
 featured_image: images/featured/pharmecalc.png
 summary: O PharmeCalc auxilia profissionais de saúde a calcular dosagens de medicamentos com precisão, prevenindo erros e promovendo a segurança do paciente.

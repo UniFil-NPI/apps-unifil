@@ -1,6 +1,7 @@
 ---
 title: "Pontes de Papel"
 draft: false
+important: 1
 language: pt-br
 featured_image: images/featured/ponte_de_papel.jpeg
 summary: "Somos um projeto que visa ligar as pessoas que querem doar seus livros com as pessoas que querem ler os livros doados."

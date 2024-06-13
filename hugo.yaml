@@ -46,6 +46,7 @@ markup:
       xhtml: false
 
 params:
+
   author: Computação UniFil
   authorimage: ../assets/images/global/author.webp
   og_image: /images/tailbliss-cover.png

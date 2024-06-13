@@ -1,5 +1,6 @@
 ---
 title: "Anki"
+important: 1
 draft: false
 language: pt-br
 featured_image: images/featured/anki.png

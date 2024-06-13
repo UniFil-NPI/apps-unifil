@@ -2,6 +2,7 @@
 title: "CultureLon"
 draft: false
 language: pt-br
+important: 1
 featured_image: images/featured/CultureLon.png 
 summary: Sumário de seu projeto
 author: Unifil

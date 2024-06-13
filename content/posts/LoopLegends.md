@@ -1,6 +1,7 @@
 ---
 title: "Loop Legends"
 draft: false
+important: 4
 language: pt-br
 featured_image: images/featured/Loop.png 
 summary: "Jogo"

@@ -1,5 +1,7 @@
 ---
 title: DietSync
+important: 5
+featured_image: images/featured/dietsync.webp
 tags: ["CC", "Educação", "Tecnologia", "Ciência", "Saúde"] 
 date: 2024-05-17
 ---

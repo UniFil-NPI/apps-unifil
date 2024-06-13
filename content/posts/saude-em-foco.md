@@ -2,6 +2,7 @@
 title: "Saúde em Foco"
 featured_image: images/featured/saude-logo.png
 language: pt-br
+important: 1
 author: UniFil
 summary: O Saúde em Foco fornece um guia virtual de cuidados de saúde de maneira simplificada para todos aqueles que procuram mais informações sobre determinada doença
 categories: Blog
