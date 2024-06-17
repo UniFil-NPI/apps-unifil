@@ -2,6 +2,7 @@
 title: "FlashFlare"
 important: 1
 draft: false
+summary: Pelo evidente fato explorado e exposto por instituições, tal como a Associação Americana de Pesquisa Educacional e a Sociedade Internacional para Tecnologia em Educação, o uso de flashcards apresentou-se eficiente para estudos e memorização
 language: pt-br
 featured_image: images/featured/FlashFlare.png
 author: Everton Kenji Ikeda

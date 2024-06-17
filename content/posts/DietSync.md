@@ -1,6 +1,7 @@
 ---
 title: DietSync
 important: 5
+summary: Descubra um novo você com a DietSync, um sistema WEB que combina dietas suas dietas, treinos, receitas deliciosas e monitoramento da evolução das suas medidas. Tudo o que você precisa para alcançar seus objetivos de saúde e fitness em uma só plataforma!
 featured_image: images/featured/dietsync.webp
 tags: ["CC", "Educação", "Tecnologia", "Ciência", "Saúde"] 
 date: 2024-05-17
@@ -8,7 +9,6 @@ date: 2024-05-17
 
 ## Bem-vindo ao Futuro da Saúde e Bem-Estar
 
-Descubra um novo você com a DietSync, um sistema WEB que combina dietas suas dietas, treinos, receitas deliciosas e monitoramento da evolução das suas medidas. Tudo o que você precisa para alcançar seus objetivos de saúde e fitness em uma só plataforma!
 
 ### **O Que Oferecemos**
 

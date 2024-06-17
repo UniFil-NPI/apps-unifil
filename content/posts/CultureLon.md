@@ -4,7 +4,7 @@ draft: false
 language: pt-br
 important: 1
 featured_image: images/featured/CultureLon.png 
-summary: Sumário de seu projeto
+summary: O CultureLon nasceu de uma vontade simples. Facilitar o acesso às informações sobre os eventos rolando em Londrina. A gente percebeu que, muitas vezes, perdíamos eventos incríveis só porque não sabíamos que estavam acontecendo. Pensamos E se houvesse um lugar único onde você pudesse descobrir o que tá rolando na cidade? E assim, o CultureLon veio à vida!
 author: Unifil
 categories: Blog
 tags: ["CC", "ES","Tecnologia","Cultura", "Entretenimento"] 
@@ -18,8 +18,6 @@ linkvideo: https://www.youtube.com/watch?v=Ue5DqVWtkDg
 # CultureLon
 
 ## Um pouco sobre nosso projeto!
-
-O CultureLon nasceu de uma vontade simples: facilitar o acesso às informações sobre os eventos rolando em Londrina. A gente percebeu que, muitas vezes, perdíamos eventos incríveis só porque não sabíamos que estavam acontecendo. Pensamos: "E se houvesse um lugar único onde você pudesse descobrir o que tá rolando na cidade?" E assim, o CultureLon veio à vida!
 
 Criamos um site com o objetivo de oferecer uma plataforma fácil para que organizadores de eventos possam cadastrar suas atividades, promovendo uma divulgação ampla. Queremos ampliar a visibilidade de eventos, independentemente do porte, proporcionando acesso à cultura para todos que desejam, mas podem não ter conhecimento sobre as oportunidades disponíveis!
 
