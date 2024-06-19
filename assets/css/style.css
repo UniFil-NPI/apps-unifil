@@ -5210,3 +5210,19 @@ EmojiSymbols;
     animation-play-state: paused;
   }
 }
+.scrollable-div {
+  width: 320px;
+  height: 600px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  margin: 0 auto; /* Centraliza a div horizontalmente */
+}
+.instagram-post {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.instagram-post iframe {
+  width: 320px;
+  height: 550px; /* Define o tamanho fixo para o iframe */
+}

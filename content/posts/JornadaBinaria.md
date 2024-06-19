@@ -1,10 +1,10 @@
 ---
-title: "Jornada Binaria"
+title: "Jornada Binária"
 draft: false
 important: 4
 language: pt-br
 featured_image: images/featured/Ciencia-da-Computacao.jpg
-summary: O objetivo deste jogo é fazer o máximo de ponto possível, Os jogadores devem responder corretamente a perguntas relacionadas à programação para acumular pontos.
+summary: O objetivo deste jogo é fazer o máximo de pontos possível. Os jogadores devem responder corretamente a perguntas relacionadas à programação para acumular pontos.
 author: Unifil
 categories: Blog
 tags: ["CC", "Educação", "Tecnologia", "Cultura", "Entretenimento"] 
