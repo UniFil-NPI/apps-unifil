@@ -57,7 +57,7 @@ Uma melhora na comunidade de leitores da Unifil, visto que esse é um hábito es
 - Acesse o site, faça login e clique em "Cadastrar Livro".
 
 **Quem pode utilizar o site?**
-- Somente alunos da Unifil podem usar o site.
+- Somente alunos da UniFil podem usar o site.
 
 **Como faço para retirar um livro?**
 - Encontre o livro desejado, clique em "Retirar Livro" e insira seus dados de contato.

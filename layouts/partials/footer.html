@@ -4,13 +4,7 @@
 <script src="{{ $js.RelPermalink }}" defer></script>
 <footer class="bg-gray-900">
     <div class="max-w-md px-4 py-12 mx-auto overflow-hidden sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
-        <nav class="flex flex-wrap justify-center -mx-5 -my-2" aria-label="Footer">
-            {{ range site.Menus.footer }}
-            <div class="px-5 py-2">
-                <a href="{{ .URL | absLangURL }}" class="text-base text-gray-400 hover:text-gray-300">{{ .Name }}</a>
-            </div>
-            {{ end }}
-        </nav>
+     
         <div class="flex justify-center mt-8 space-x-6">
             {{ if .Site.Params.Social_media.Facebook.Enabled }}
             <a href="#" class="text-gray-400 hover:text-gray-300">
@@ -23,7 +17,7 @@
             </a>
             {{ end }}
             {{ if .Site.Params.Social_media.Instagram.Enabled }}
-            <a href="#" class="text-gray-400 hover:text-gray-300">
+            <a href="https://www.instagram.com/extensao_compunifil?igsh=MWNla3dycnludmZ5cw==" class="text-gray-400 hover:text-gray-300">
                 <span class="sr-only">Instagram</span>
                 <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fill-rule="evenodd"
