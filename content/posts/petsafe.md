@@ -8,7 +8,6 @@ author: Unifil
 categories: Blog
 tags: ["ADS","Tecnologia", "Saúde", "Animais"]
 linkandroid: https://github.com/RafaelaRomin/petsave-frontend/releases/download/v1.0/app-release.apk
-linkweb: https://rafaelaromin.github.io/PetSaveBackend/
 linkblog: https://rafaelaromin.github.io/PetSaveBackend/
 linkvideo: https://youtu.be/Sytl_-wOwqI
 
