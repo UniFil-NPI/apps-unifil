@@ -1,9 +1,8 @@
 ---
-
 title: "TalentExchange" 
 draft: false 
 language: pt-br 
-featured\_image: images/featured/talentexchange.png
+featured_image: images/featured/talent.png
 summary: Descubra o TalentExchange, o app que conecta você a novas experiências, habilidades e conhecimentos! Simples e direto, ele facilita encontrar pessoas com talentos únicos, permitindo que você explore e aprenda de forma prática e envolvente. Com uma interface fácil de usar, o TalentExchange é perfeito para quem busca expandir conhecimentos e se inspirar com as habilidades de outros usuários. Conecte-se, explore e transforme seu aprendizado em algo extraordinário! 
 author: Unifil 
 categories: Blog 
