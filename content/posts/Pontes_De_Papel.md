@@ -8,7 +8,7 @@ summary: "Somos um projeto que visa ligar as pessoas que querem doar seus livros
 author: Unifil
 authorimage: images/global/author.webp
 categories: Blog
-tags: ["ES", "CC", "Livros", "Educação", "Tecnologia", "Cultura", "Entretenimento"]
+tags: ["ES", "CC", "Educação", "Tecnologia", "Cultura", "Entretenimento"]
 linkweb: "http://164.152.55.248"
 linkblog: "https://pontesdpapel.blogspot.com/?m=1"
 linkvideo: "https://www.youtube.com/watch?v=oqkNFwPmsyY"

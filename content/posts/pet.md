@@ -7,7 +7,7 @@ featured_image: images/featured/petsafe.jpg
 summary: Um App para ajudar na Doação de Sangue para Pets
 author: Unifil
 categories: Blog
-tags: ["ADS","Tecnologia", "Saúde", "Animais"]
+tags: ["ADS","Tecnologia", "Saúde"]
 linkandroid: https://github.com/RafaelaRomin/petsave-frontend/releases/download/v1.0/app-release.apk
 linkblog: https://rafaelaromin.github.io/PetSaveBackend/
 linkvideo: https://youtu.be/Sytl_-wOwqI

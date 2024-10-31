@@ -3,7 +3,7 @@ title: "GymHelper"
 draft: false
 important: 1
 language: pt-br
-featured_image: images/featured/gymhelper.png 
+featured_image: images/featured/GymHelper.png
 summary: O Gym Helper é uma aplicação web que oferece suporte ao usuário na criação e gerenciamento de treinos personalizados de forma prática e acessível.
 author: Lucas Henrique dos Santos, João Filipe Liotto, Arthur Ivaza Costa, Ivan Carlos de Amaral, Lucas Saito
 categories: Blog
