@@ -1,6 +1,7 @@
 ---
 title: "Aprovados"
 draft: false
+important: 1
 language: pt-br
 featured_image: images/featured/Aprovados.jpg
 summary: Sistema Web voltadd para o gerenciamento e controle do tempo nos estudos

@@ -2,7 +2,7 @@
 title: "Lixo Eletrônico"
 draft: false
 language: pt-br
-important: 5
+important: 1
 featured_image: images/featured/lixoEletronicoLogo.jpg
 summary: "Um site para encontrar locais para descarte de lixo eletrônico"
 author: Gustavo Selhorst Marconi

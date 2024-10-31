@@ -2,7 +2,7 @@
 title: "Alimente-se"
 draft: false
 language: pt-br
-important: 1
+important: 2
 featured_image: images/featured/logo_alimente-se.png
 summary: "Somos um projeto que visa combater a fome e o desperdício de alimentos, conectando doadores a comunidades carentes."
 author: Unifil

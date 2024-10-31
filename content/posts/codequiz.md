@@ -1,6 +1,6 @@
 ---
 title: "CodeQuiz"
-important: 2
+important: 1
 draft: false
 language: pt-br
 featured_image: images/featured/codequiz.png

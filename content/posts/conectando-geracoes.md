@@ -1,6 +1,7 @@
 ---
 title: "Conectando Gerações"
 draft: false
+important: 1
 language: pt-br
 featured_image: images/featured/conectandoGeracoes.jpg
 summary: Este projeto visa desenvolver um site intuitivo e acessível para capacitar idosos no uso de ferramentas digitais. Focado em texto descritivo e vídeos, o site aborda temas essenciais, como redes sociais e segurança online, facilitando a inclusão digital e autonomia desse público.

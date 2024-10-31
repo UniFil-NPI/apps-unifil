@@ -1,6 +1,7 @@
 ---
 title: "DiceForge"
 draft: false
+important: 1
 language: pt-br
 featured_image: images/featured/dice.jpg
 summary: Aplicativo para criação de fichas do RPG de mesa popular Dungeons and Dragons.

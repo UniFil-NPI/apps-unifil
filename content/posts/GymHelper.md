@@ -1,6 +1,7 @@
 ---
 title: "GymHelper"
 draft: false
+important: 1
 language: pt-br
 featured_image: images/featured/gymhelper.png 
 summary: O Gym Helper é uma aplicação web que oferece suporte ao usuário na criação e gerenciamento de treinos personalizados de forma prática e acessível.
