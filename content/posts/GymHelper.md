@@ -1,18 +1,15 @@
 ---
-title: "Nome do projeto"
+title: "GymHelper"
 draft: false
-important: 6
 language: pt-br
-featured_image: images/featured/featured-img-placeholder.png 
-summary: Sumário de seu projeto
-author: Unifil
+featured_image: images/featured/gymhelper.png 
+summary: O Gym Helper é uma aplicação web que oferece suporte ao usuário na criação e gerenciamento de treinos personalizados de forma prática e acessível.
+author: Lucas Henrique dos Santos, João Filipe Liotto, Arthur Ivaza Costa, Ivan Carlos de Amaral, Lucas Saito
 categories: Blog
-tags: ["CC", "ES", "ADS", "IA", "Educação", "Tecnologia", "Ciência", "Saúde", "Cultura", "Entretenimento"] 
-linkandroid: link  de download do aplicativo em android
-linkios: link de download aplicativo em ios
-linkweb: link de acesso de aplicativo web
-linkblog: Link do blog
-linkvideo: Link do video
+tags: ["Tecnologia", "Ciência", "Saúde", "Entretenimento"] 
+linkweb: https://gym-helper-app-final.vercel.app/
+linkblog: https://ghapp3.wordpress.com/
+linkvideo: https://www.youtube.com/watch?v=W2chPN2vyA0
 
 ---
 
@@ -29,12 +26,59 @@ You will like those projects!
 
 # ABAIXO O CONTEÙDO DE EXPLICAÇÂO DE SEU APLICATIVO
 
-# h1 Heading :blush:
-## h2 Heading
-### h3 Heading
-#### h4 Heading
-##### h5 Heading
-###### h6 Heading
+# Gym Helper
+Bem-vindo ao **Gym Helper App**, sua plataforma digital para gerenciar e otimizar treinos, acompanhamento de progresso e desenvolvimento fitness. Seja você iniciante ou avançado, o Gym Helper oferece ferramentas e recursos para alcançar seus objetivos de forma organizada e eficaz.
+
+## Funcionalidades Principais
+Explore as principais funcionalidades do Gym Helper App, pensadas para facilitar e otimizar seu acompanhamento fitness.
+
+### Acompanhamento de Treinos
+Registre e acompanhe seus treinos diários com precisão. No Gym Helper, você pode adicionar e editar seus treinos, visualizar histórico de atividades, e ajustar conforme a evolução.
+
+#### Registro de Exercícios
+Adicione exercícios específicos com detalhes como número de séries, repetições e peso utilizado, permitindo que você visualize seu progresso e veja como está evoluindo em cada treino.
+
+##### Sugestões de Exercícios
+O Gym Helper oferece uma lista de sugestões de exercícios, personalizadas para o seu nível de habilidade e objetivos, para que você possa incluir novos movimentos e variar suas rotinas.
+
+###### Histórico de Alterações de Treino
+Veja o histórico completo de suas mudanças de treino, facilitando o acompanhamento e garantindo uma visão clara das adaptações feitas ao longo do tempo.
+
+## Plano de Nutrição
+Acompanhe suas metas de alimentação, registre suas refeições e veja sugestões de refeições que apoiam o seu progresso nos treinos.
+
+### Registro de Dieta e Refeições
+Registre suas refeições e veja uma análise nutricional para apoiar o seu treino e ajudar a alcançar suas metas fitness.
+
+#### Sugestões de Nutrição Personalizadas
+Receba sugestões de refeições balanceadas com base em seu perfil, para facilitar a manutenção da dieta e apoiar a evolução.
+
+## Histórico de Progresso
+Monitore seu progresso ao longo do tempo com gráficos e estatísticas. Acompanhe peso, medidas, volume de treino, e outras métricas relevantes para ver o quanto você está evoluindo.
+
+### Análise de Progresso Visual
+Veja gráficos de desempenho e acompanhe seu progresso de forma visual, facilitando o entendimento dos resultados alcançados.
+
+#### Relatórios de Evolução
+Obtenha relatórios periódicos do seu progresso, incluindo detalhes sobre suas melhorias e onde você ainda pode focar para alcançar novos patamares.
+
+## Comunidade e Suporte
+Participe de uma comunidade ativa de outros usuários que também estão na jornada fitness. Compartilhe dicas, pergunte e ajude outras pessoas que utilizam o Gym Helper App.
+
+### Fórum de Discussão
+Conecte-se com outros usuários através do fórum, onde você pode compartilhar experiências, tirar dúvidas e receber dicas valiosas.
+
+#### Atendimento e Suporte ao Usuário
+Tenha acesso ao suporte da plataforma para quaisquer problemas técnicos ou dúvidas sobre o uso do app.
+
+## Dicas Personalizadas
+Com base no seu perfil e no seu progresso, receba dicas de exercícios e ajustes para otimizar ainda mais seus resultados.
+
+### Dicas de Treino
+Dicas práticas de treino para cada fase do seu desenvolvimento, incluindo sugestões de intensidade e frequência.
+
+#### Dicas de Recuperação
+Dicas para uma recuperação muscular mais rápida e saudável, incluindo alongamentos e cuidados após os treinos.
 
 
 ## Horizontal Rules
@@ -262,4 +306,3 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 ::: warning
 *here be dragons*
 :::
-
