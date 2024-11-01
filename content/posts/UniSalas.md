@@ -39,12 +39,4 @@ Se você tiver dúvidas, sugestões ou quiser saber mais sobre o *UniSalas*, ent
 📧 E-mail: unisalas@gmail.com 
 🌐 Site: [unisalas.com](https://murillodaigder.wixsite.com/unisalas)  
 
-
-
 ---
-
-
-
-
-
-
