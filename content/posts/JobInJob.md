@@ -1,6 +1,7 @@
 ---
 title: "Job In Job"
 draft: false
+important: 1
 language: pt-br
 featured_image: images/featured/JobInJob.png
 summary: Plataforma web que permite à comunidade em geral criar currículos de forma prática e acessível, facilitando a busca por oportunidades de emprego. Além disso, empresas podem utilizar a plataforma para encontrar e contratar novos talentos, simplificando o processo de seleção de candidatos.

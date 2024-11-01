@@ -2,7 +2,7 @@
 title: "Time to Focus ⏲️"
 draft: false
 language: pt-br
-important: 1
+important: 2
 featured_image: /images/featured/time_to_focus.jpg
 summary: Um projeto feito para a extensão curricular com o propósito de aumentar o foco do aluno.
 author: Unifil

@@ -1,6 +1,7 @@
 ---
 title: "Brainbase"
 draft: false
+important: 2
 language: pt-br
 featured_image: images/featured/Brainbase.png 
 summary: Conheça uma nova forma de organizar seus projetos e estudos. Acesse já o Brainbase!

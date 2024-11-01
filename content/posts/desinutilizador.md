@@ -1,6 +1,6 @@
 ---
 title: "Desinutilizador"
-important: 1
+important: 2
 language: pt-br
 featured_image: images/featured/logodesinutilizador.png 
 summary: A Desinutilizador é uma plataforma web que oferece recomendações personalizadas de atividades para os usuários. Utiliza dados comportamentais e de personalidade para sugerir opções que se alinham com os interesses e habilidades individuais.

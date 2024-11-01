@@ -1,7 +1,7 @@
 ---
 title: "LonHeal"
 draft: false
-important: 1
+important: 2
 language: pt-br
 featured_image: images/featured/LonHeal.jpeg
 summary: Mapear todos os estabelecimentos na área da saúde, na região de Londrina-PR. Fornecer informações a respeito do horário de funcionamento de cada estabelecimento, bem como detalhes sobre as especialidades do local.

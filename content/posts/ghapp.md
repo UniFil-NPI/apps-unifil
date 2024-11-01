@@ -1,6 +1,7 @@
 ---
 title: "GymHelper"
 draft: false
+important: 1
 language: pt-br
 featured_image: images/featured/ghapp.png 
 summary: Seu bloco de notas para treinar

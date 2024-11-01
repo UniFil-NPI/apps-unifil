@@ -1,6 +1,6 @@
 ---
 title: "Defend The Crown"
-important: 1
+important: 2
 language: pt-br
 featured_image: images/featured/defend.webp
 summary: O seguinte projeto se trata de um jogo de estratégia desenvolvido e pensado por 4 alunos do Centro Universitário Filadélfia (UniFil) para a disciplina de Extensão Curricular, sendo 3 estudantes do curso de graduação presencial de Ciência da Computação e 1 estudantes do curso de graduação EAD de Análise e Desenvolvimento de Sistemas.

@@ -1,6 +1,7 @@
 ---
 title: "Palavra Viva"
 draft: false
+important: 1
 language: pt-br
 featured_image: images/featured/palavra.png
 summary: O Palavra Viva é um website focado no incentivo a fé cristã através de devocionais diários e leitura bíblica online.

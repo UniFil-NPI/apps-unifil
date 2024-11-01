@@ -2,6 +2,7 @@
 
 title: "Horta Solidária"
 draft: false
+important: 1
 language: pt-br
 featured_image: images/featured/logo-horta.png
 summary: A Horta Solidária é um projeto social inovador promovido pela Prefeitura de Apucarana, dedicado a atender famílias carentes e idosos na comunidade. O projeto tem como base a criação e manutenção de hortas comunitárias, cujo propósito vai além da produção de alimentos saudáveis.

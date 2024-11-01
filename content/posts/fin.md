@@ -1,6 +1,6 @@
 ---
 title: "Finapp"
-important: 1
+important: 2
 language: pt-br
 featured_image: images/featured/fin.png
 summary: Finapp é uma aplicação financeira para ajudar a gerenciar o seu negócio, facilitando a visualização rápida de informações diárias ou periódicas das suas vendas ou realização de serviços.

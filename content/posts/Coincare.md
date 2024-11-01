@@ -1,6 +1,6 @@
 ---
 title: "CoinCare"
-important: 1
+important: 2
 draft: false
 language: pt-br
 featured_image: images/featured/coincare.png

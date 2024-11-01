@@ -2,6 +2,7 @@
 
 title: "Garden Express" 
 draft: false
+important: 2
 language: pt-br 
 featured_image: images/featured/garden.png
 summary: Website para uma iniciativa para Horta Comunitária!
