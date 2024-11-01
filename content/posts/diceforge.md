@@ -7,7 +7,7 @@ featured_image: images/featured/dice.jpg
 summary: Aplicativo para criação de fichas do RPG de mesa popular Dungeons and Dragons.
 author: Unifil
 categories: Blog
-tags: ["CC", "ES", "Tecnologia", "Cultura","Entretenimento"] 
+tags: ["CC", "ES","ADS", "Tecnologia", "Cultura","Entretenimento"] 
 linkandroid: http://168.138.144.36:8000/downloads/app-debug.apk
 linkblog: http://168.138.144.36:8000
 linkvideo: https://www.youtube.com/watch?v=9t_SOxnlLRA&authuser=0

@@ -8,8 +8,7 @@ summary: Nesse jogo, seu objetivo é escapar da torre do Mago Lifinu o mais ráp
 author: Ivan de Oliveira Nantes, Felipe Henrique Sanches, Gabriel Wentz Rocha
 categories: Blog
 tags: ["CC", "ES", "Cultura", "Entretenimento"] 
-linkwindows: https://fig-company.itch.io/lifinus-quest
-linklinux: https://fig-company.itch.io/lifinus-quest
+linkandroid: https://fig-company.itch.io/lifinus-quest
 linkblog: https://figcompany.blogspot.com/
 linkvideo: https://www.youtube.com/watch?v=e7EHKKMBAWE
 
