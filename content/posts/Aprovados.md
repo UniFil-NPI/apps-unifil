@@ -4,7 +4,7 @@ draft: false
 important: 1
 language: pt-br
 featured_image: images/featured/Aprovados.jpg
-summary: Sistema Web voltadd para o gerenciamento e controle do tempo nos estudos
+summary: Sistema Web voltado para o gerenciamento e controle do tempo nos estudos
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "Educação", "Tecnologia"] 
@@ -44,12 +44,10 @@ O projeto "Aprovados" é um sistema web desenvolvido com o intuito de auxiliar e
 
 ### Feedback
 
-> Tinha problemas em ficar muitas horas estudando, o Aprovados me ajudou a me manter focado nos meus estudos
-> É um site muito intuitivo, fácil de usar e principalmente entrega o que prometeu, melhorar o desempenho nos estudos
+> Tinha problemas em ficar muitas horas estudando, o Aprovados me ajudou a me manter focado nos meus estudos. É um site muito intuitivo, fácil de usar e principalmente entrega o que prometeu, melhorar o desempenho nos estudos
 
 ### Contato
 
-+ [link with title](https://github.com/VitorPaloco/Aprovados_Documentacao "GitHub - Documentação")
 + Emails:
   - vitor.paloco@edu.unifil.br
   - victor.zuccoli@edu.unifil.br
