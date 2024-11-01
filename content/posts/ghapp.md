@@ -12,12 +12,7 @@ linkblog: https://ghapp3.wordpress.com/
 
 ---
 
-__Nosso LINKS :link:__
 
-- __[Acesse nosso projeto !](https://gym-helper-app-final.vercel.app/)__ - Nosso site com todas suas funcionalidades
-- __[Acesse nosso blog !](https://ghapp3.wordpress.com/)__ - Nosso blog para você se interar com nosso projeto 
-
----
 
 # O QUE É GH ? :muscle:
 
