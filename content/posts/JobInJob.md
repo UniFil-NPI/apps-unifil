@@ -10,8 +10,8 @@ categories: Blog
 tags: ["ES", "Tecnologia"] 
 linkblog: https://thejobinjob.wixstudio.io/jobinjob
 linkvideo: https://www.youtube.com/watch?v=icDpus1tlmA
+linkapp: http://168.138.132.44:8081
 ---
-
 # Job In Job: Conectando Talentos e Oportunidades de Forma Eficiente. 💼
 
 A Job in Job trata-se de uma plataforma web, onde pessoas da comunidade em geral podem montar o seu currículo em busca de oportunidades de empregos, o site irá deixar visível esses currículos para empresas interessadas na contratação de novos funcionários.
@@ -29,9 +29,4 @@ Atualmente, na maioria dos sites de emprego, os candidatos precisam enviar inúm
 ## Saiba Mais  
 🌐 [Job In Job](https://thejobinjob.wixstudio.io/jobinjob)  
 🤖 [Git Hub](https://github.com/LeandroDeFRusso/Job-In-Job)  
-
-
-
-
-
 

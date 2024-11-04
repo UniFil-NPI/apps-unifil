@@ -33,6 +33,20 @@ Já para equipe de professores e coordenação, será disponibilizado um acesso 
 
 ---
 
+## Nossa equipe  👥
+
+Conheça a equipe por trás do *UniSalas*, cada um responsável por uma área essencial do projeto.
+
+
+|  Vinicius Marçal Mendes - Gerente de Projetos     |
+|  ------------------------------------------------|
+| Murillo Daigder - Estrategista de Marketing      |
+| Murilo Cavazzana - Analista de Dados             |
+| Gabriel Aguiar - Desenvolvedor                   |
+| Matheus Corrêa - Desenvolvedor                   |
+
+
+---
 ## Contato 📞
 
 Se você tiver dúvidas, sugestões ou quiser saber mais sobre o *UniSalas*, entre em contato conosco pelas nossas redes sociais ou através do nosso e-mail.
