@@ -10,7 +10,7 @@ categories: Blog
 tags: ["CC", "ES", "ADS", "Educação", "Tecnologia"] 
 linkblog: https://murillodaigder.wixsite.com/unisalas
 linkvideo: https://www.youtube.com/watch?v=xLJqCN8RDPk
-
+linkaplicativo: http://64.181.190.222:3000/
 ---
 
 # Projeto de Cadastro e Organização de Horários de Aulas, UniSalas 💼📅
