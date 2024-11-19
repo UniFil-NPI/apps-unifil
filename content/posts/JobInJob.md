@@ -9,7 +9,7 @@ author: Unifil
 categories: Blog
 tags: ["ES", "Tecnologia"] 
 linkblog: https://thejobinjob.wixstudio.io/jobinjob
-linkvideo: https://www.youtube.com/watch?v=icDpus1tlmA
+linkvideo:  https://youtu.be/chRIrJL4rgw?feature=shared 
 linkapp: http://168.138.132.44:8081
 ---
 # Job In Job: Conectando Talentos e Oportunidades de Forma Eficiente. 💼
