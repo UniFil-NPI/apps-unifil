@@ -8,9 +8,11 @@ summary: Plataforma web que permite à comunidade em geral criar currículos de 
 author: Unifil
 categories: Blog
 tags: ["ES", "Tecnologia"] 
+linkapp: http://168.138.132.44:8081
 linkblog: https://thejobinjob.wixstudio.io/jobinjob
 linkvideo:  https://youtu.be/chRIrJL4rgw?feature=shared 
-linkapp: http://168.138.132.44:8081
+
+
 ---
 # Job In Job: Conectando Talentos e Oportunidades de Forma Eficiente. 💼
 
