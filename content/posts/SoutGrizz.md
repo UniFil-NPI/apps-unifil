@@ -14,7 +14,7 @@ tags:
     "ADS",
     "Educação",
     "Tecnologia",
-    "Intelecto",
+    "quiz",
     "Entretenimento",
   ]
 linkweb: https://soutgrizz.netlify.app/
