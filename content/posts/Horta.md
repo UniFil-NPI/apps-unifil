@@ -9,7 +9,7 @@ summary: A Horta Solidária é um projeto social inovador promovido pela Prefeit
 author: Lucas Oliveira, Lucas Pinheiro e Lucas Rezende
 categories: Blog
 tags: ["ES", "Tecnologia", "Cultura"]
-linkweb: https://extensao-horta-solidaria-one.vercel.app/auth/login
+linkweb: https://app-horta-solidaria.vercel.app/login
 linkblog: https://extensao-horta-solidaria-one.vercel.app/site
 linkvideo: https://extensao-horta-solidaria-one.vercel.app/site#video
 
