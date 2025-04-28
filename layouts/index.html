@@ -47,7 +47,7 @@
           </div>
           
         </div>
-        <div class=" hidden lg:block flex col-span-6 overflow-hidden rounded md:min-w-full ">
+        <div id="posts" class=" hidden lg:block flex col-span-6 overflow-hidden rounded md:min-w-full ">
 
 
           <div class="agrupamento agrupamento--vertical">
@@ -370,6 +370,27 @@
     // Call the loadStats function when the div is loaded
     loadStats();
   });
+
+ document.addEventListener('DOMContentLoaded', () => {
+  const searchBar = document.getElementById('search-bar');
+  const postContainer = document.getElementById('postContainer');
+  const posts = postContainer.querySelectorAll('.post-container');
+
+  searchBar.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase().trim();
+
+    posts.forEach(post => {
+      const titleElement = post.querySelector('a.block');
+      const title = titleElement ? titleElement.textContent.toLowerCase().trim() : '';
+
+      if (title.includes(query)) {
+        post.parentElement.style.display = ''; // Mostra o post
+      } else {
+        post.parentElement.style.display = 'none'; // Oculta o post
+      }
+    });
+  });
+});
 
 </script>
 
