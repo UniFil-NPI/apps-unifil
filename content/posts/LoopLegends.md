@@ -11,7 +11,6 @@ tags: ["CC", "Tecnologia", "Entretenimento"]
 linkweb: http://150.230.81.47/index.html?authuser=1
 linkblog: https://looplegends.blogspot.com
 linkvideo: https://www.youtube.com/watch?v=q1PVNAvq470
-
 ---
 
 
