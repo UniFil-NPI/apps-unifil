@@ -6,7 +6,7 @@ featured_image: images/featured/EmpireOfAzeitanaro.jpeg
 summary: Jogo de aventura 2D, em que o objetivo principal do protagonista Azeitanaro um centurião, será instituir o seu próprio império. Entretanto para conseguir tal feito será necessário derrotar os inimigos coletando vários itens, sendo o principal deles o Elixir de Azeite, que irá lhe conferir maior poder e força, possibilitando a ascensão do seu império ao final dessa jornada.
 author: (Olive Studios®)
 categories: Blog
-tags: ["CC", "ES", "Educação", "Jogos", "Plataforma", "Cultura", "Entretenimento", "Godot", "Tecnologia"] 
+tags: ["CC", "ES", "Educação", "Jogo", "Cultura", "Entretenimento", "Tecnologia"] 
 linkweb: https://64.181.178.127/
 linkblog: https://sites.google.com/edu.unifil.br/olive-studios/p%C3%A1gina-inicial?authuser=0
 

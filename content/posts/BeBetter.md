@@ -8,7 +8,7 @@ featured_image: images/featured/bebetter.png
 summary: Um site voltado para o desenvolvimento pessoal e gerenciamento de tarefas, hábitos e rotinas
 author: Fernando Galdino Santana Junior, Luis Filipe Zuin, Moisés Gabriel de Caris, Pedro Arthur Marques de Castro, Thiago Miyabe
 categories: Blog
-tags: ["ES", "Educação", "Tecnologia","Tarefas"] 
+tags: ["ES", "Educação", "Tecnologia"] 
 linkandroid: 
 linkios: 
 linkweb: http://152.70.222.50:3000/

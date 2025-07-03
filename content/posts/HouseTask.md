@@ -6,7 +6,7 @@ featured_image: images/featured/HouseTask.jpg
 summary: Site para gerenciamento e organização de tarefas domésticas em grupo.
 author: Unifil
 categories: Organização
-tags: ["CC", "ES", "ADS","Tarefas", "Casa", "Organização", "Tecnologia", "Aplicativo", "Responsabilidades"]
+tags: ["CC", "ES", "ADS", "Organização", "Tecnologia"]
 linkweb: https://projetohousetask-production.up.railway.app
 linkblog: https://housetask.webnode.page/
 linkvideo: https://drive.google.com/file/u/0/d/18zO32BM2RqWK16MCj78aL0jkTKDfaF6L/view?usp=classroom_web

@@ -7,7 +7,7 @@ featured_image: images/featured/ghapp.png
 summary: Seu bloco de notas para treinar
 author: Unifil
 categories: Blog
-tags: ["CC", "ES", "ADS", "IA", "Educação", "Tecnologia", "Saúde", "Organização", "Treino"] 
+tags: ["CC", "ES", "ADS", "IA", "Educação", "Tecnologia", "Saúde"] 
 linkweb: https://gym-helper-app-final.vercel.app/
 linkblog: https://ghapp3.wordpress.com/
 

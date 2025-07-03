@@ -6,7 +6,7 @@ featured_image: images/featured/omaislife.jpg
 summary: A O+ Life tem como objetivo incentivar a doação de sangue, através de um mapeamento dos centros de coleta de sangue em Londrina, os horários que esses centros de coleta atendem e sua localização, além de estimular de diferentes formas, a comunidade a contribuir com a doação de sangue.
 author: Unifil
 categories: Blog
-tags: ["CC", "ES", "Tecnologia", "Informação", "Saúde"]
+tags: ["CC", "ES", "Tecnologia", "Saúde"]
 linkweb: https://omaislife.netlify.app/index.html
 linkblog: https://doe-sangue.webnode.page/
 linkvideo: https://youtu.be/ljSGOO0SmUE?si=I0fNG000K9rsE-Qu
