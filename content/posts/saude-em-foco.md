@@ -17,8 +17,6 @@ linkvideo: "https://youtu.be/w77HofnHfEE"
 * [Código fonte](https://github.com/ederbiason/saude-in-foco)
 * [Saúde em Foco](http://144.22.160.181:3000/)
 
-{% img /assets/images/saude-logo.png [width] [height] '"Saúde em Foco" "Saúde em Foco"' %}
-
 # O que é Extensão Curricular
 
 Nesta prática de 'Extensão Curricular' será atribuída uma nota referente às atividades de extensão realizadas pelo aluno, avaliados individualmente. O projeto será finalizado após o aluno cumprir todas as quatro Unidades Curriculares de Práticas de Extensão. A atividade contempla na implementação de um aplicativo com conteúdos específicos de análise de sistemas, banco de dados e desenvolvimento do projeto, compartilhado publicamente, para uso do corpo social. Segundo o Conselho Nacional de Educação (CNE), a Extensão da educação superior no Brasil é a atividade que se integra à matriz curricular e à organização da pesquisa. Ainda conforme o conselho citado, a extensão constitui-se em processo interdisciplinar, político educacional, cultural, científico e tecnológico que promove a interação transformadora entre as instituições de ensino superior e os outros setores da sociedade, por meio da produção e da aplicação do conhecimento, em articulação permanente com o ensino e a pesquisa (Conselho Nacional de Educação. Resolução nº 7/2018). A “creditação curricular”, conhecida como “curricularização da extensão” consiste na adequação dos Projetos Pedagógicos de Curso (PPC) visando garantir um percentual mínimo na carga horária dos cursos para as atividades de extensão, em atendimento à Resolução (Conselho Nacional de Educação. Resolução nº 7/2018).
