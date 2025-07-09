@@ -3,7 +3,7 @@ title: "MetaVerso UniFil"
 date: 2025-07-09
 draft: false
 language: pt-br
-featured_image: images/featured/UniFilNew.png
+featured_image: images/featured/MetaversoUniFil.png
 summary: O MetaVerso UniFil é uma simulação universitária no Roblox que promove os cursos de Computação da UniFil por meio de minigames no ambiente virtual
 author: UniFil
 categories: Blog

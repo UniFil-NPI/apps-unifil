@@ -1,7 +1,7 @@
 ---
 
 title: "TaskSphere" 
-date: 2025-07-09
+date: 2025-07-08
 draft: false 
 language: pt-br 
 featured_image: images/featured/TaskSphere.webp

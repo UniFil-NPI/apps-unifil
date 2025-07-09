@@ -1,6 +1,6 @@
 ---
 title: "Defend The Crown"
-date: 2025-07-09
+date: 2025-07-08
 important: 2
 language: pt-br
 featured_image: images/featured/defend.webp

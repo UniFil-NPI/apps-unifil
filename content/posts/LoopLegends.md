@@ -1,6 +1,6 @@
 ---
 title: "Loop Legends"
-date: 2025-07-09
+date: 2025-07-08
 draft: false
 important: 4
 language: pt-br

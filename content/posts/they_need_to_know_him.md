@@ -1,6 +1,6 @@
 ---
 title: "They need to know him"
-date: 2025-07-09
+date: 2025-07-08
 language: pt-br
 important: 2
 author: Caio Matsumoto, Davi Carvalho, Felipe Campos, Felipe Toledo, Sergio Tanaka

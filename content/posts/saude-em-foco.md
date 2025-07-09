@@ -1,6 +1,6 @@
 ---
 title: "Saúde em Foco"
-date: 2025-07-09
+date: 2025-07-08
 featured_image: images/featured/saude-logo.png
 language: pt-br
 important: 1

@@ -1,6 +1,6 @@
 ---
 title: "Anki"
-date: 2025-07-09
+date: 2025-07-08
 important: 2
 draft: false
 language: pt-br

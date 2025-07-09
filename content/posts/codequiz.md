@@ -1,6 +1,6 @@
 ---
 title: "CodeQuiz"
-date: 2025-07-09
+date: 2025-07-08
 important: 1
 draft: false
 language: pt-br

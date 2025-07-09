@@ -1,6 +1,6 @@
 ---
 title: "LonHeal"
-date: 2025-07-09
+date: 2025-07-08
 draft: false
 important: 2
 language: pt-br
