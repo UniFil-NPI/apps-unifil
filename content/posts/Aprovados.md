@@ -1,5 +1,6 @@
 ---
 title: "Aprovados"
+date: 2025-07-09
 draft: false
 important: 1
 language: pt-br
@@ -11,7 +12,6 @@ tags: ["CC", "ES", "Educação", "Tecnologia"]
 linkweb: https://aprovados-ten.vercel.app/timer-pomodoro/index.html
 linkblog: https://aprovados-unifill.blogspot.com/
 linkvideo: https://youtu.be/JoEv5QxJK08
-
 ---
 
 # APROVADOS, ELEVANDO O NÍVEL DOS ESTUDOS.

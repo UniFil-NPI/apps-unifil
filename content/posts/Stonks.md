@@ -1,5 +1,6 @@
 ---
 title: "Stonks - Sistema de Controle Financeiro"
+date: 2025-07-09
 draft: false
 language: pt-br
 featured_image: images/featured/Stonks.png 

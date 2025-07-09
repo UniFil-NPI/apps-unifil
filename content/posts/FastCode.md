@@ -1,5 +1,6 @@
 ---
 title: "FastCode"
+date: 2025-07-09
 draft: false
 important: 2
 language: pt-br

@@ -1,5 +1,6 @@
 ---
 title: "KiloCalc: Calculadora de Taxa metabólica basal"
+date: 2025-07-09
 draft: false
 language: pt-br
 featured_image: images/featured/KiloCalc.png

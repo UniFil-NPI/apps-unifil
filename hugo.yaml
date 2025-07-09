@@ -6,7 +6,8 @@ enableEmoji: true
 enableGitInfo: true
 enableRobotsTXT: true
 canonifyURLs: true
-paginate: 12
+pagination:
+  pagerSize: 12
 darkmode_js:
   - assets/js/darkmode.js
 enableInlineShortcodes: true
@@ -105,10 +106,13 @@ params:
       url: 'https://facebook.com/nusserstudios'
     instagram:
       enabled: true
-   
+      url: 'https://www.instagram.com/extensao_compunifil'
     twitter:
       enabled: false
       url: '@nusserstudios'
+    tiktok:
+      enabled: true
+      url: 'https://www.tiktok.com/@computacao.unifil'
     
 
 menu:

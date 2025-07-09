@@ -1,10 +1,10 @@
 ---
-title: DietSync
+title: "DietSync"
+date: 2025-07-09
 important: 5
 summary: Dietsync é um sistema WEB que combina dietas suas dietas, treinos, receitas deliciosas e monitoramento da evolução das suas medidas. Tudo o que você precisa para alcançar seus objetivos de saúde e fitness em uma só plataforma!
 featured_image: images/featured/dietsync.png
 tags: ["CC", "Educação", "Tecnologia", "Ciência", "Saúde"] 
-date: 2024-05-17
 linkweb: http://152.67.45.167/
 linkblog: https://dietsync.blogspot.com/
 linkvideo: https://youtu.be/IgkQNIpcpUs?si=VdLQf6NOjech3hL6

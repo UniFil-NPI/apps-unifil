@@ -1,6 +1,6 @@
 ---
-
 title: "BeBetter"
+date: 2025-07-09
 important: 2
 draft: false
 language: pt-br
@@ -14,11 +14,9 @@ linkios:
 linkweb: http://152.70.222.50:3000/
 linkblog: https://bebetterbro.blogspot.com/
 linkvideo: 
-
 ---
 
 # Somos o BeBetter
----
 
 Um Aplicativo para o seu desenvolvimento pessoal.
 

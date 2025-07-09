@@ -1,5 +1,6 @@
 ---
 title: "CultureLon"
+date: 2025-07-09
 draft: false
 language: pt-br
 important: 2

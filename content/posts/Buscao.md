@@ -1,5 +1,6 @@
 ---
 title: "Buscão"
+date: 2025-07-09
 draft: false
 language: pt-br
 featured_image: images/featured/Buscao.png
@@ -10,7 +11,6 @@ tags: ["CC", "ES", "ADS", "Tecnologia", "Ciência"]
 linkweb: https://mazymss.github.io/buscao.github.io/
 linkblog: http://168.138.159.255/
 ---
-
 
 # O Buscão
 

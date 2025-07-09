@@ -1,5 +1,6 @@
 ---
 title: "CoinCare"
+date: 2025-07-09
 important: 2
 draft: false
 language: pt-br
@@ -12,10 +13,6 @@ tags: ["CC", "ES", "Educação", "Tecnologia", "Ciência", "Economia"]
 linkweb: http://168.138.155.172/
 linkblog: https://extensaocoincare.blog/
 linkvideo: https://youtu.be/WW5-WlQRqAI
-
----
-
-
 ---
 
 # <b> Projeto de Extensão Universitária Coincare </b>
@@ -67,4 +64,3 @@ Planejamento Financeiro: Os usuários podem planejar com antecedência suas desp
 Educação Financeira: O sistema fornece insights valiosos sobre como gastar de forma consciente e responsável.
 
 Com o CoinCare, estamos determinados a ajudar a comunidade a conquistar uma maior estabilidade financeira e a tomar decisões informadas sobre suas finanças pessoais. Juntos, podemos construir um futuro financeiro mais seguro e consciente para todos!
-

@@ -1,5 +1,6 @@
 ---
 title: "Finapp"
+date: 2025-07-09
 important: 2
 language: pt-br
 featured_image: images/featured/fin.png

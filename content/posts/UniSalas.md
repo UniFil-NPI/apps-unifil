@@ -1,5 +1,6 @@
 ---
 title: "UniSalas"
+date: 2025-07-09
 draft: false
 important: 1
 language: pt-br

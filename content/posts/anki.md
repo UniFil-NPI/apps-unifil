@@ -1,5 +1,6 @@
 ---
 title: "Anki"
+date: 2025-07-09
 important: 2
 draft: false
 language: pt-br
@@ -13,9 +14,7 @@ linkblog: https://ankiparatodos.blogspot.com/?m=1
 linkvideo: https://www.youtube.com/watch?v=HbCNTlEoET8
 ---
 
-
 # Projeto Anki
-
 
 ## Dor (Necessidade a Ser Atendida)
 Mesmo o anki sendo um meio comum para aqueles que buscam aprender japones, muitos deles são complexos de se usar, e não muito intuivos, vendo essa nessecidade de algumas pessoas, veio a ideia do projeto. 

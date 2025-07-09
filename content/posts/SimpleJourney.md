@@ -1,5 +1,6 @@
 ---
 title: "SimpleJourney"
+date: 2025-07-09
 important: 4
 draft: false
 language: pt-br
