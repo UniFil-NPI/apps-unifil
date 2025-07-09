@@ -8,7 +8,7 @@ featured_image: images/featured/LifinusQuest.jpeg
 summary: Nesse jogo, seu objetivo é escapar da torre do Mago Lifinu o mais rápido que conseguir, desviando de inimigos e espinhos pelo caminho!
 author: Ivan de Oliveira Nantes, Felipe Henrique Sanches, Gabriel Wentz Rocha
 categories: Blog
-tags: ["CC", "ES", "Cultura", "Entretenimento"] 
+tags: ["CC", "ES", "Cultura", "Entretenimento", "Jogo"] 
 linkandroid: https://fig-company.itch.io/lifinus-quest
 linkblog: https://figcompany.blogspot.com/
 linkvideo: https://www.youtube.com/watch?v=e7EHKKMBAWE
