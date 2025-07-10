@@ -1,10 +1,11 @@
 ---
 title: "Desinutilizador"
+summary: A Desinutilizador é uma plataforma web que oferece recomendações personalizadas de atividades para os usuários. Utiliza dados comportamentais e de personalidade para sugerir opções que se alinham com os interesses e habilidades individuais.
+featured_image: images/featured/Desinutilizador.png 
+
 date: 2025-07-08
 important: 2
 language: pt-br
-featured_image: images/featured/logodesinutilizador.png 
-summary: A Desinutilizador é uma plataforma web que oferece recomendações personalizadas de atividades para os usuários. Utiliza dados comportamentais e de personalidade para sugerir opções que se alinham com os interesses e habilidades individuais.
 author: Eduardo Cardoso Agostinetti, Vitor Prando, Vidal Cabrera, Leonardo de Castro e Souza, Hugo Hayashi
 categories: Blog
 tags: ["Educação", "Tecnologia", "Ciência", "Saúde", "Cultura", "Entretenimento"]

@@ -1,11 +1,12 @@
 ---
 title: "Anki"
+summary: "O projeto Anki visa facilitar o aprendizado de japonese para iniciantes"
+featured_image: images/featured/Anki.png
+
 date: 2025-07-08
 important: 2
 draft: false
 language: pt-br
-featured_image: images/featured/anki.png
-summary: "O projeto Anki visa facilitar o aprendizado de japonese para iniciantes"
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "Educação", "Tecnologia"]

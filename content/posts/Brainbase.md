@@ -1,11 +1,12 @@
 ---
 title: "Brainbase"
+summary: Conheça uma nova forma de organizar seus projetos e estudos. Acesse já o Brainbase!
+featured_image: images/featured/Brainbase.png
+ 
 date: 2025-07-08
 draft: false
 important: 2
 language: pt-br
-featured_image: images/featured/Brainbase.png 
-summary: Conheça uma nova forma de organizar seus projetos e estudos. Acesse já o Brainbase!
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "Educação", "Tecnologia", "Ciência"] 

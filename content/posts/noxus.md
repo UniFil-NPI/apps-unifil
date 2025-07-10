@@ -1,11 +1,12 @@
 ---
 title: "Noxus"
+summary: Otimize seu tempo com Noxus - o sistema de agendamento de laboratório eficiente e intuitivo. Simplifique sua rotina, agende experimentos em segundos e concentre-se no que realmente importa. Experimente agora! 
+featured_image: images/featured/Noxus.webp
+
 date: 2025-07-08
 draft: false
 important: 2
 language: pt-br
-featured_image: images/featured/noxus.webp
-summary: Otimize seu tempo com Noxus - o sistema de agendamento de laboratório eficiente e intuitivo. Simplifique sua rotina, agende experimentos em segundos e concentre-se no que realmente importa. Experimente agora! 
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "ADS", "Tecnologia"] 

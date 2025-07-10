@@ -1,10 +1,11 @@
 ---
 title: "Flashcards"
+summary: Aplicativo de flashcards personalizáveis que auxilia estudantes na memorização de conteúdos por meio de perguntas e respostas de forma lúdica.
+featured_image: images/featured/Flashcards.png 
+
 date: 2025-07-09
 draft: false
 language: pt-br
-featured_image: images/featured/Flashcards.png 
-summary: Aplicativo de flashcards personalizáveis que auxilia estudantes na memorização de conteúdos por meio de perguntas e respostas de forma lúdica.
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "Educação", "Tecnologia", "Entretenimento"] 

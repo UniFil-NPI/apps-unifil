@@ -1,23 +1,15 @@
 ---
 title: "SoutGrizz"
+summary: Quizz de JAVA
+featured_image: images/featured/SoutGrizz.png
+
 date: 2025-07-08
 draft: false
 important: 1
 language: pt-br
-featured_image: images/featured/soutgrizz.png
-summary: Quizz de JAVA
 author: Unifil
 categories: Blog
-tags:
-  [
-    "CC",
-    "ES",
-    "ADS",
-    "Educação",
-    "Tecnologia",
-    "Quiz",
-    "Entretenimento",
-  ]
+tags: ["CC", "ES", "ADS", "Educação", "Tecnologia", "Quiz", "Entretenimento"]
 linkweb: https://soutgrizz.netlify.app/
 linkblog: https://deft-otter-b56a72.netlify.app/
 linkvideo: https://www.youtube.com/watch?v=vDHseTzeEE8

@@ -1,11 +1,12 @@
 ---
 title: "GateWay"
+summary: GateWay é um jogo feito em unity que visa ensinar o básico de portas lógicas
+featured_image: images/featured/GateWay.png
+
 date: 2025-07-08
 draft: false
 important: 1
 language: pt-br
-featured_image: images/featured/GateWayIMG.png
-summary: GateWay é um jogo feito em unity que visa ensinar o básico de portas lógicas
 author: Unifil
 categories: Blog
 tags: ["ES", "Educação", "Tecnologia", "Entretenimento","Jogo"] 

@@ -1,10 +1,11 @@
 ---
 title: "Stonks - Sistema de Controle Financeiro"
+summary: Um sistema completo de controle financeiro pessoal que permite registrar receitas, despesas, definir metas, acompanhar relatórios e organizar sua vida financeira de forma intuitiva.
+featured_image: images/featured/Stonks.png 
+
 date: 2025-07-09
 draft: false
 language: pt-br
-featured_image: images/featured/Stonks.png 
-summary: Um sistema completo de controle financeiro pessoal que permite registrar receitas, despesas, definir metas, acompanhar relatórios e organizar sua vida financeira de forma intuitiva.
 author: Juliano da Mota Ferreira Antunes, Jorge Maluf
 categories: Blog
 tags: ["Tecnologia", "ES", "Educação"]

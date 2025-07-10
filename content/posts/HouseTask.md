@@ -1,10 +1,11 @@
 ---
 title: "HouseTask"
+summary: Site para gerenciamento e organização de tarefas domésticas em grupo.
+featured_image: images/featured/HouseTask.jpg
+
 date: 2025-07-09
 draft: false
 language: pt-br
-featured_image: images/featured/HouseTask.jpg
-summary: Site para gerenciamento e organização de tarefas domésticas em grupo.
 author: Unifil
 categories: Organização
 tags: ["CC", "ES", "ADS", "Organização", "Tecnologia"]

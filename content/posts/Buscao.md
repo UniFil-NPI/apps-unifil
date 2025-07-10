@@ -1,10 +1,11 @@
 ---
 title: "Buscão"
+summary: "A aplicação é uma iniciativa para ajudar a reunir famílias e seus animais de estimação, criando uma rede colaborativa de ajuda."
+featured_image: images/featured/Buscao.png
+
 date: 2025-07-08
 draft: false
 language: pt-br
-featured_image: images/featured/Buscao.png
-summary: "A aplicação é uma iniciativa para ajudar a reunir famílias e seus animais de estimação, criando uma rede colaborativa de ajuda."
 author: Unifil
 categories: ["Blog"]
 tags: ["CC", "ES", "ADS", "Tecnologia", "Ciência"]

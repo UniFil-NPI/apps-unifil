@@ -1,11 +1,12 @@
 ---
 title: "FastCode"
+summary: O FastCode foi desenvolvido para simplificar o processo de vendas em estabelecimentos físicos, utilizando o QR-Code. Para os clientes, o aplicativo permite revisar o pedido antes do pagamento e oferece um histórico completo de compras. Já para os funcionários, a plataforma possibilita o cadastro de itens à venda, a criação de pedidos e o acompanhamento do histórico de vendas.
+featured_image: images/featured/FastCode.png
+
 date: 2025-07-08
 draft: false
 important: 2
 language: pt-br
-featured_image: images/featured/logo-FastCode.png 
-summary: O FastCode foi desenvolvido para simplificar o processo de vendas em estabelecimentos físicos, utilizando o QR-Code. Para os clientes, o aplicativo permite revisar o pedido antes do pagamento e oferece um histórico completo de compras. Já para os funcionários, a plataforma possibilita o cadastro de itens à venda, a criação de pedidos e o acompanhamento do histórico de vendas.
 author: Unifil
 categories: Blog
 tags: ["ADS", "Tecnologia"] 

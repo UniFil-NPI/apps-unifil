@@ -1,10 +1,11 @@
 ---
 title: "Inclusio – Plataforma de Currículos Acessíveis"
+summary: Plataforma web e mobile que simplifica a criação de currículos para quem tem pouca familiaridade com tecnologia, oferecendo modelos personalizáveis e geração instantânea de PDF.
+featured_image: images/featured/Inclusio.jpg
+
 date: 2025-07-09
 draft: false
 language: pt-br
-featured_image: images/featured/inclusio.jpg
-summary: Plataforma web e mobile que simplifica a criação de currículos para quem tem pouca familiaridade com tecnologia, oferecendo modelos personalizáveis e geração instantânea de PDF.
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "Educação", "Tecnologia"]

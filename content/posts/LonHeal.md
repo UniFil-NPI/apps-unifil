@@ -1,27 +1,16 @@
 ---
 title: "LonHeal"
+summary: Mapear todos os estabelecimentos na área da saúde, na região de Londrina-PR. Fornecer informações a respeito do horário de funcionamento de cada estabelecimento, bem como detalhes sobre as especialidades do local.
+featured_image: images/featured/LonHeal.jpeg
+
 date: 2025-07-08
 draft: false
 important: 2
 language: pt-br
-featured_image: images/featured/LonHeal.jpeg
-summary: Mapear todos os estabelecimentos na área da saúde, na região de Londrina-PR. Fornecer informações a respeito do horário de funcionamento de cada estabelecimento, bem como detalhes sobre as especialidades do local.
 author: Diego Arial ,  Giovani Corrêa ,  Henrique Corrêa ,  Luiz Cortez
 authorimage:
 categories: Blog
-tags:
-  [
-    "CC",
-    "ES",
-    "ADS",
-    "Educação",
-    "Tecnologia",
-    "Ciência",
-    "Saúde",
-    "Cultura",
-    "Entretenimento",
-  ]
-
+tags: ["CC", "ES", "ADS", "Educação", "Tecnologia", "Ciência", "Saúde", "Cultura", "Entretenimento"]
 linkweb: http://144.22.163.65
 linkblog: https://lonhealoficial.blogspot.com/
 linkvideo: https://www.youtube.com/watch?v=WQ71cv_ZsRA

@@ -1,11 +1,12 @@
 ---
 title: "UniSalas"
+summary: O UniSalas é um programa desenvolvido com o intuito de trazer facilidade na vida acadêmica, disponibilizando uma plataforma para que professores, alunos e coordenadores tenham acesso ao quadro de aulas e no caso dos coordenadores e professores manipulem as informações, fazendo cadastros de laboratórios e de horários de aula.
+featured_image: images/featured/UniSalas.png
+
 date: 2025-07-08
 draft: false
 important: 1
 language: pt-br
-featured_image: images/featured/UniSalasLogo.png
-summary: O UniSalas é um programa desenvolvido com o intuito de trazer facilidade na vida acadêmica, disponibilizando uma plataforma para que professores, alunos e coordenadores tenham acesso ao quadro de aulas e no caso dos coordenadores e professores manipulem as informações, fazendo cadastros de laboratórios e de horários de aula.
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "ADS", "Educação", "Tecnologia"] 

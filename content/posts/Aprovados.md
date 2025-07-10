@@ -1,11 +1,12 @@
 ---
 title: "Aprovados"
+summary: Sistema Web voltado para o gerenciamento e controle do tempo nos estudos
+featured_image: images/featured/Aprovados.jpg
+
 date: 2025-07-08
 draft: false
 important: 1
 language: pt-br
-featured_image: images/featured/Aprovados.jpg
-summary: Sistema Web voltado para o gerenciamento e controle do tempo nos estudos
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "Educação", "Tecnologia"] 

@@ -1,11 +1,11 @@
 ---
-
 title: "TaskSphere" 
+summary: Organize suas tarefas e conquiste seus objetivos com o Task Sphere! 🎯✨ Simplifique seu dia a dia com uma interface prática e eficiente. Crie listas, defina prioridades e acompanhe seu progresso de maneira intuitiva. Baixe agora e transforme sua produtividade!
+featured_image: images/featured/TaskSphere.webp
+
 date: 2025-07-08
 draft: false 
 language: pt-br 
-featured_image: images/featured/TaskSphere.webp
-summary: Organize suas tarefas e conquiste seus objetivos com o Task Sphere! 🎯✨ Simplifique seu dia a dia com uma interface prática e eficiente. Crie listas, defina prioridades e acompanhe seu progresso de maneira intuitiva. Baixe agora e transforme sua produtividade!
 author: Unifil 
 categories: Blog 
 tags: ["ADS"] 

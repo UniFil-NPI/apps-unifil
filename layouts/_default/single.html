@@ -1,5 +1,9 @@
 {{define "main"}}
-<head><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" /></head>
+
+<head>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
 
 <article>
   <header class="mb-4 bg-orange">
@@ -9,191 +13,198 @@
       </h1>
     </span>
   </header>
-  
+
   <div class="max-w-4xl mx-auto mt-8 mb-2">
     <div class="text-right mb-4">
       <!-- Insert your like button HTML code here -->
       <!-- For example: -->
-    
-  </div>
+
+    </div>
     <div class="px-6">
-      
-      <button  id="stats" style="float:right;" onclick="addLike('{{ .RelPermalink }}')" class="mt-2 px-4 py-2 font-bold text-white bg-orange-button text-white rounded-md  focus:outline-none "></button>
+
+      <button id="stats" style="float:right;" onclick="addLike('{{ .RelPermalink }}')"
+        class="mt-2 px-4 py-2 font-bold text-white bg-orange-button text-white rounded-md  focus:outline-none "></button>
       {{ with .Params.featured_image }}
       {{ with resources.Get (relURL .) }}
-        {{ $small := (.Resize "400x webp q80").RelPermalink }}
-        {{ $medium := (.Resize "550x webp q80").RelPermalink }}
-        {{ $large := (.Resize "900x webp q80").RelPermalink }}
-        {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
-        <div id="stats" class="stats-container"></div>
-        
-        <img src="{{ $featuredimage }}" srcset="
+      {{ $small := (.Resize "400x webp q80").RelPermalink }}
+      {{ $medium := (.Resize "550x webp q80").RelPermalink }}
+      {{ $large := (.Resize "900x webp q80").RelPermalink }}
+      {{ $featuredimage := (.Resize "1500x webp q80").RelPermalink }}
+      <div id="stats" class="stats-container"></div>
+
+      <img src="{{ $featuredimage }}" srcset="
           {{- with $small -}}, {{.}} 400w{{- end -}}
           {{- with $medium -}}, {{.}} 550w{{- end -}}
           {{- with $large -}}, {{.}} 768w{{- end -}}
           {{- with $featuredimage -}}, {{.}} 1100w{{- end -}}"
-           class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
-           width="100%" alt="{{ .Params.title }}" />
+        class="object-fill overflow-hidden rounded-lg shadow-lg ring-4 ring-zinc-300/40 dark:ring-gray-900/40 shadow-neutral-100/20 dark:shadow-neutral-800/40"
+        width="100%" alt="{{ .Params.title }}" />
       {{ end }}
-    {{ end }}
-    
-      <div class= " text-sm  flex ">
-          
+      {{ end }}
+
+      <div class=" text-sm  flex ">
+
         {{ if .Params.linkandroid }}
-        <a href="{{ .Params.linkandroid }}" class=" rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative  bg-orange-button" style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center;" >
+        <a href="{{ .Params.linkandroid }}"
+          class=" rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative  bg-orange-button"
+          style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center;">
           <span class="mr-2">Download Android</span>
         </a>
         {{ end }}
-        
+
         {{ if .Params.linkios }}
-        <a href="{{ .Params.linkios }}" class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+        <a href="{{ .Params.linkios }}"
+          class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button"
+          style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
           <span class="mr-2">Download iOS</span>
         </a>
         {{ end }}
-        
+
         {{ if .Params.linkweb }}
-        <a href="{{ .Params.linkweb }}" class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
-          <span >Acesse o aplicativo</span>
+        <a href="{{ .Params.linkweb }}"
+          class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button"
+          style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+          <span>Acesse o aplicativo</span>
         </a>
         {{ end }}
-        
+
         {{ if .Params.linkblog }}
-        <a href="{{ .Params.linkblog }}" class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button" style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+        <a href="{{ .Params.linkblog }}"
+          class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white w-full relative bg-orange-button"
+          style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
           <span class="mr-2">Acesse o Blogger</span>
         </a>
         {{ end }}
-        
+
         {{ if .Params.linkvideo }}
-        <a href="{{ .Params.linkvideo }}" class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white  w-full relative bg-orange-button" style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
+        <a href="{{ .Params.linkvideo }}"
+          class="rounded-lg pulse-link flex items-center m-4 md:m-0 px-4 py-2 font-bold text-white  w-full relative bg-orange-button"
+          style="margin :2px;box-shadow: inset 0 0 50px #ff9f04;justify-content: center">
           <span class="mr-2">Assista ao Vídeo</span>
         </a>
         {{ end }}
-        
-  </div>
+
+      </div>
     </div>
 
 
 
   </div>
-  
+
   <!-- " {{.Content}}" pulls from the markdown content of the corresponding _index.md -->
   <div class="max-w-2xl px-6 pt-6 pb-16 mx-auto prose dark:prose-invert dark:text-white">
     {{.Content}}
   </div>
-  <script src="https://utteranc.es/client.js"
-  repo="UniFil-NPI/apps-unifil"
-  issue-term="url"
-  theme="github-dark"
-  crossorigin="anonymous"
-  async>
-</script>
+  <script src="https://utteranc.es/client.js" repo="UniFil-NPI/apps-unifil" issue-term="url" theme="github-dark"
+    crossorigin="anonymous" async>
+    </script>
 </article>
 <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-firestore.js"></script>
 <script>
-const firebaseConfig = {
-apiKey: "AIzaSyDmK3Shq6G_grLAWK3dB_Q2VKB5kRaufqo",
-authDomain: "apps-unifil.firebaseapp.com",
-databaseURL: "https://apps-unifil-default-rtdb.firebaseio.com",
-projectId: "apps-unifil",
-storageBucket: "apps-unifil.appspot.com",
-messagingSenderId: "1047227536957",
-appId: "1:1047227536957:web:b708c2cf31c46f53737c54",
-measurementId: "G-SH4W4RJM2J"
-};
+  const firebaseConfig = {
+    apiKey: "AIzaSyDmK3Shq6G_grLAWK3dB_Q2VKB5kRaufqo",
+    authDomain: "apps-unifil.firebaseapp.com",
+    databaseURL: "https://apps-unifil-default-rtdb.firebaseio.com",
+    projectId: "apps-unifil",
+    storageBucket: "apps-unifil.appspot.com",
+    messagingSenderId: "1047227536957",
+    appId: "1:1047227536957:web:b708c2cf31c46f53737c54",
+    measurementId: "G-SH4W4RJM2J"
+  };
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
-var db = firebase.firestore();function updateVisits(route) {
-  // Normaliza a rota para garantir consistência
-  route = route.replace(/\/{2,}/g, '/').split('/').filter(part => part.length > 0).pop();
+  var db = firebase.firestore(); function updateVisits(route) {
+    // Normaliza a rota para garantir consistência
+    route = route.replace(/\/{2,}/g, '/').split('/').filter(part => part.length > 0).pop();
 
-  // Verifica se o usuário já visitou a página
-  var visited = localStorage.getItem(route + '_visited');
+    // Verifica se o usuário já visitou a página
+    var visited = localStorage.getItem(route + '_visited');
 
-  if (!visited) {
-    // Marca como visitado no localStorage
-    localStorage.setItem(route + '_visited', 'true');
+    if (!visited) {
+      // Marca como visitado no localStorage
+      localStorage.setItem(route + '_visited', 'true');
+
+      const pageRef = db.collection('pages').doc(route);
+      pageRef.set({
+        visits: firebase.firestore.FieldValue.increment(1)
+      }, { merge: true })
+        .then(() => {
+          console.log("Visits updated successfully for route:", route);
+        })
+        .catch((error) => {
+          console.error("Error updating visits for route:", route, error);
+        });
+    } else {
+      console.log("Route already visited:", route);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var route = "{{ .RelPermalink }}";
+    route = route.replace(/\/{2,}/g, '/');
+    route = route.split('/').filter(part => part.length > 0).pop();
+    console.log("Processed route for visit update:", route);
+    updateVisits(route);
+  });
+
+  function addLike(route) {
+    route = route.replace(/\/{2,}/g, '/');
+    route = route.split('/'); // Split the route into segments
+    route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
+
+    // Check if the page has already been liked by the user
+    var liked = localStorage.getItem(route + '_liked');
+    if (!liked) {
+      // If not liked, increment the like count and mark the page as liked
+      const pageRef = db.collection('pages').doc(route);
+      pageRef.set({
+        likes: firebase.firestore.FieldValue.increment(1)
+      }, { merge: true }).then(() => {
+        console.log("Like added successfully for route:", route);
+        // Mark the page as liked in local storage
+        localStorage.setItem(route + '_liked', true);
+        location.reload(); // Reload the page
+      }).catch((error) => {
+        console.error("Error adding like for route:", route, error);
+      });
+    }
+  }
+
+  function getStats(route, containerId) {
+    if (!route) {
+      console.log("Route is undefined");
+      return;
+    }
 
     const pageRef = db.collection('pages').doc(route);
-    pageRef.set({
-      visits: firebase.firestore.FieldValue.increment(1)
-    }, { merge: true })
-    .then(() => {
-      console.log("Visits updated successfully for route:", route);
-    })
-    .catch((error) => {
-      console.error("Error updating visits for route:", route, error);
+    pageRef.get().then((doc) => {
+      var likes = 0;
+      if (doc.exists) {
+        likes = doc.data().likes || 0;
+      } else {
+        console.log("No data found for route:", route);
+      }
+      var statsHtml = "<div> <span class='material-symbols-outlined' style='padding-left: 6px;'>thumb_up</span></span><span style='color: orange; font-weight: bold;'><span style='color: white; font-weight: bold;float:left'> " + likes + "</span></div>";
+      document.getElementById(containerId).innerHTML = statsHtml;
+    }).catch((error) => {
+      console.error("Error getting document:", error);
+      var statsHtml = "<div> <span class='material-symbols-outlined' style='padding-left: 6px;'>thumb_up</span></span><span style='color: orange; font-weight: bold;'><span style='color: white; font-weight: bold;float:left'> 0 </span></div>";
+      document.getElementById(containerId).innerHTML = statsHtml;
     });
-  } else {
-    console.log("Route already visited:", route);
   }
-}
 
-document.addEventListener('DOMContentLoaded', function () {
-  var route = "{{ .RelPermalink }}";
-  route = route.replace(/\/{2,}/g, '/');
-  route = route.split('/').filter(part => part.length > 0).pop();
-  console.log("Processed route for visit update:", route);
-  updateVisits(route);
-});
-
-function addLike(route) {
-route = route.replace(/\/{2,}/g, '/');
-route = route.split('/'); // Split the route into segments
-route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
-
-// Check if the page has already been liked by the user
-var liked = localStorage.getItem(route + '_liked');
-if (!liked) {
-// If not liked, increment the like count and mark the page as liked
-const pageRef = db.collection('pages').doc(route);
-pageRef.set({
-  likes: firebase.firestore.FieldValue.increment(1)
-}, { merge: true }).then(() => {
-  console.log("Like added successfully for route:", route);
-  // Mark the page as liked in local storage
-  localStorage.setItem(route + '_liked', true);
-  location.reload(); // Reload the page
-}).catch((error) => {
-  console.error("Error adding like for route:", route, error);
-});
-}
-}
-
-function getStats(route, containerId) {
-if (!route) {
-console.log("Route is undefined");
-return;
-}
-
-const pageRef = db.collection('pages').doc(route);
-pageRef.get().then((doc) => {
-var likes = 0;
-if (doc.exists) {
-  likes = doc.data().likes || 0;
-} else {
-  console.log("No data found for route:", route);
-}
-var statsHtml = "<div> <span class='material-symbols-outlined' style='padding-left: 6px;'>thumb_up</span></span><span style='color: orange; font-weight: bold;'><span style='color: white; font-weight: bold;float:left'> " + likes + "</span></div>";
-document.getElementById(containerId).innerHTML = statsHtml;
-}).catch((error) => {
-console.error("Error getting document:", error);
-var statsHtml = "<div> <span class='material-symbols-outlined' style='padding-left: 6px;'>thumb_up</span></span><span style='color: orange; font-weight: bold;'><span style='color: white; font-weight: bold;float:left'> 0 </span></div>";
-document.getElementById(containerId).innerHTML = statsHtml;
-});
-}
-
-document.addEventListener('DOMContentLoaded', function () {
-var route = "{{ .RelPermalink }}";
-console.log("Original route:", route);
-route = route.replace(/\/{2,}/g, '/');
-route = route.split('/'); // Split the route into segments
-route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
-console.log("Processed route:", route);
-getStats(route, "stats");
-});
+  document.addEventListener('DOMContentLoaded', function () {
+    var route = "{{ .RelPermalink }}";
+    console.log("Original route:", route);
+    route = route.replace(/\/{2,}/g, '/');
+    route = route.split('/'); // Split the route into segments
+    route = route[route.length - 2]; // Get the second-to-last segment (i.e., 'template')
+    console.log("Processed route:", route);
+    getStats(route, "stats");
+  });
 </script>
 <script id="dsq-count-scr" src="//appstoreunifil.disqus.com/count.js" async></script>
 {{end}}

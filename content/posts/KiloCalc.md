@@ -1,10 +1,11 @@
 ---
 title: "KiloCalc: Calculadora de Taxa metabólica basal"
+summary: KiloCalc é um aplicativo simples e intuitivo para calcular sua Taxa Metabólica Basal (TMB) e estimar quantas calorias você precisa por dia, de acordo com seu perfil e objetivo. Ideal para quem quer manter, perder ou ganhar peso de forma saudável.
+featured_image: images/featured/KiloCalc.png
+
 date: 2025-07-09
 draft: false
 language: pt-br
-featured_image: images/featured/KiloCalc.png
-summary: KiloCalc é um aplicativo simples e intuitivo para calcular sua Taxa Metabólica Basal (TMB) e estimar quantas calorias você precisa por dia, de acordo com seu perfil e objetivo. Ideal para quem quer manter, perder ou ganhar peso de forma saudável.
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "Tecnologia", "Ciência", "Saúde"]

@@ -1,10 +1,11 @@
 ---
 title: "Rachadinha"
+summary: Aplicativo para divisão de contas entre amigos de uma forma mais fácil nos rolês.
+featured_image: images/featured/Rachadinha.jpg 
+
 date: 2025-07-09
 draft: false
 language: pt-br
-featured_image: images/featured/Rachadinha.jpg 
-summary: Aplicativo para divisão de contas entre amigos de uma forma mais fácil nos rolês.
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "Finanças"] 

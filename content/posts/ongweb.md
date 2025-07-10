@@ -1,11 +1,12 @@
 ---
 title: "ONGWeb"
+summary: "O projeto ONGWeb fortalece ONGs com sites acessíveis e personalizados, destacando suas missões e promovendo escolhas conscientes."
+featured_image: images/featured/ONGWeb.jpg
+
 date: 2025-07-08
 important: 3
 draft: false
 language: pt-br
-featured_image: images/featured/ongweb.jpg
-summary: "O projeto ONGWeb fortalece ONGs com sites acessíveis e personalizados, destacando suas missões e promovendo escolhas conscientes."
 author: Unifil
 authorimage: ../assets/images/global/author.webp
 categories: Blog

@@ -1,10 +1,11 @@
 ---
 title: "LearnConnect – Biblioteca Social de Conhecimentos"
+summary: "LearnConnect é uma plataforma web que conecta quem aprende e quem ensina, organizando materiais, comentários e feedbacks em um só lugar."
+featured_image: images/featured/LearnConnect.png
+
 date: 2025-07-09
 draft: false
 language: pt-br
-featured_image: images/featured/LearnConnect.png
-summary: "LearnConnect é uma plataforma web que conecta quem aprende e quem ensina, organizando materiais, comentários e feedbacks em um só lugar."
 author: UniFil
 categories: Projeto de Extensão
 tags: ["CC", "ES", "ADS", "Educação", "Tecnologia", "Cultura"]

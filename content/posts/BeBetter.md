@@ -1,11 +1,12 @@
 ---
 title: "BeBetter"
+summary: Um site voltado para o desenvolvimento pessoal e gerenciamento de tarefas, hábitos e rotinas
+featured_image: images/featured/BeBetter.png
+
 date: 2025-07-08
 important: 2
 draft: false
 language: pt-br
-featured_image: images/featured/bebetter.png
-summary: Um site voltado para o desenvolvimento pessoal e gerenciamento de tarefas, hábitos e rotinas
 author: Fernando Galdino Santana Junior, Luis Filipe Zuin, Moisés Gabriel de Caris, Pedro Arthur Marques de Castro, Thiago Miyabe
 categories: Blog
 tags: ["ES", "Educação", "Tecnologia"] 

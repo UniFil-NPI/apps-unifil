@@ -1,11 +1,12 @@
 ---
 title: "CodeQuiz"
+summary: O Code Quiz é uma plataforma interativa projetada para testar e aprimorar seus conhecimentos em programação. Seja você um iniciante curioso ou um programador experiente em busca de desafios, o Code Quiz oferece uma variedade de perguntas elaboradas para cobrir uma ampla gama de tópicos de programação.
+featured_image: images/featured/codequiz.png
+
 date: 2025-07-08
 important: 1
 draft: false
 language: pt-br
-featured_image: images/featured/codequiz.png
-summary: O Code Quiz é uma plataforma interativa projetada para testar e aprimorar seus conhecimentos em programação. Seja você um iniciante curioso ou um programador experiente em busca de desafios, o Code Quiz oferece uma variedade de perguntas elaboradas para cobrir uma ampla gama de tópicos de programação.
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "Educação", "Tecnologia", "Entretenimento", "Quiz"]

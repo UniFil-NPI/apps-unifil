@@ -1,10 +1,11 @@
 ---
 title: "WordSlasher"
+summary: Domine o teclado, vença o relógio!
+featured_image: images/featured/WordSlasher.png 
+
 date: 2025-07-08
 draft: false
 language: pt-br
-featured_image: images/featured/logoWS.png 
-summary: Domine o teclado, vença o relógio!
 author: Unifil
 categories: Blog
 tags: ["CC","Jogo" , "Educação", "Tecnologia","Entretenimento"] 

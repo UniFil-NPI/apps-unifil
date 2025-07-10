@@ -1,11 +1,12 @@
 ---
 title: "FitNation"
+summary: Site de musculação onde o usuário pode armazenar seu treino, dieta, dados e receber dicas personalizadas sobre os mesmos.
+featured_image: images/featured/FitNation.jpg
+
 date: 2025-07-08
 draft: false
 important: 1
 language: pt-br
-featured_image: images/featured/fitnation.jpg
-summary: Site de musculação onde o usuário pode armazenar seu treino, dieta, dados e receber dicas personalizadas sobre os mesmos.
 author: Unifil
 categories: Blog
 tags: ["ES", "Saúde"]
