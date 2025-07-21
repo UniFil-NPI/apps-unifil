@@ -14,8 +14,6 @@ date: 2025-07-19
 
 ---
 
-A partir desse momento é um template de um dos posts
-
 # MACROSTRUCT - DIETA FÁCIL, NUTRIÇÃO NA PRÁTICA.
 
 ## Sobre o projeto
