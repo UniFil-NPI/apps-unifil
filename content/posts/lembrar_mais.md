@@ -9,6 +9,7 @@ author: Gabriel Claro
 categories: Blog 
 date: 2025-07-19
 tags: ["ADS", "Tecnologia", "Administração"] 
+linkweb: https://github.com/GabrielClaro10/app-lembrete
 
 
 ---
