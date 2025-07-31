@@ -1,7 +1,7 @@
 ---
 title: "Time to Focus ⏲️"
 summary: Um projeto feito para a extensão curricular com o propósito de aumentar o foco do aluno.
-featured_image: /images/featured/Time-to-Focus.jpg
+featured_image: /images/featured/time_to_focus.jpg
 
 date: 2025-07-08
 draft: false
