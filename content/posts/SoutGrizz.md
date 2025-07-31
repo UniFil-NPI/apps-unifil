@@ -1,7 +1,7 @@
 ---
 title: "SoutGrizz"
 summary: Quizz de JAVA
-featured_image: images/featured/SoutGrizz.png
+featured_image: images/featured/soutgrizz.png
 
 date: 2025-07-08
 draft: false

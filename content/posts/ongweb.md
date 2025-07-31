@@ -1,7 +1,7 @@
 ---
 title: "ONGWeb"
 summary: "O projeto ONGWeb fortalece ONGs com sites acessíveis e personalizados, destacando suas missões e promovendo escolhas conscientes."
-featured_image: images/featured/ONGWeb.jpg
+featured_image: images/featured/ongweb.jpg
 
 date: 2025-07-08
 important: 3

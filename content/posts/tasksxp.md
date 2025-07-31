@@ -1,7 +1,7 @@
 ---
 title: "TasksXP" 
 summary: Um app para você se sentir motivado a valorizar cada conquista, cada atitude, cada tarefa. Faça e pontue! Esse é o TasksXP.
-featured_image: images/featured/TasksXP.png
+featured_image: images/featured/tasksxp.png
 
 date: 2025-07-08
 draft: false 

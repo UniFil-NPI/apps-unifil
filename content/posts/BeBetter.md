@@ -1,7 +1,7 @@
 ---
 title: "BeBetter"
 summary: Um site voltado para o desenvolvimento pessoal e gerenciamento de tarefas, hábitos e rotinas
-featured_image: images/featured/BeBetter.png
+featured_image: images/featured/bebetter.png
 
 date: 2025-07-08
 important: 2

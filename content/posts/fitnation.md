@@ -1,7 +1,7 @@
 ---
 title: "FitNation"
 summary: Site de musculação onde o usuário pode armazenar seu treino, dieta, dados e receber dicas personalizadas sobre os mesmos.
-featured_image: images/featured/FitNation.jpg
+featured_image: images/featured/fitnation.jpg
 
 date: 2025-07-08
 draft: false

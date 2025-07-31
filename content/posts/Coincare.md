@@ -1,7 +1,7 @@
 ---
 title: "CoinCare"
 summary: O CoinCare é um projeto de Extensão Curricular Universitária da UniFil. Uma ferramenta eficaz para gerenciar suas obrigações financeiras, facilitando o controle e o acompanhamento de suas despesas mensais.
-featured_image: images/featured/CoinCare.png
+featured_image: images/featured/coincare.png
 
 date: 2025-07-08
 important: 2

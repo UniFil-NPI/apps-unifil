@@ -1,7 +1,7 @@
 ---
 title: "UniFil.News"
 summary: O Unifil.News é um blog interativo que visa promover a interação entre alunos, professores e colaboradores, permitindo a criação e compartilhamento de conteúdos. A plataforma facilita a troca de ideias e a construção de um ambiente de aprendizado colaborativo
-featured_image: images/featured/UniFilNews.png 
+featured_image: images/featured/UnifilNews.png 
 
 date: 2025-07-08
 draft: false

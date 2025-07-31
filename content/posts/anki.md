@@ -1,7 +1,7 @@
 ---
 title: "Anki"
 summary: "O projeto Anki visa facilitar o aprendizado de japonese para iniciantes"
-featured_image: images/featured/Anki.png
+featured_image: images/featured/anki.png
 
 date: 2025-07-08
 important: 2

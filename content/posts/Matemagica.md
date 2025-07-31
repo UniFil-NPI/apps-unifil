@@ -1,7 +1,7 @@
 ---
 title: "Matemágica"
 summary: Matemágica é um jogo interativo e divertido com o objetivo de auxiliar crianças no aprendizado e na melhoria de habilidades em operações básicas de matemática.
-featured_image: images/featured/Matemagica.png
+featured_image: images/featured/matemagica.png
 
 date: 2025-07-08
 draft: false
