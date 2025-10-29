@@ -7,7 +7,7 @@ featured_image: images/featured/easyrpg.png
 summary: Easy RPG é um simples tabuleiro virtual para se interagir comamigos online.
 author: Everton D. Oliveira Júnior
 categories: Blog
-tags: ["ADS", "Tecnologia", "Jogos"] 
+tags: ["ADS", "Tecnologia", "Jogo"] 
 linkweb: https://ever-jr.github.io/easy_rpg_page/
 linkblog: https://ever-jr.github.io/easy_rpg_page/
 date: 2025-07-19

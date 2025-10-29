@@ -7,7 +7,7 @@ featured_image: images/featured/BancoDeSangue.png
 summary: Sistema criado com o intuito de facilitar a coleta e doação de sangue, conectando doadores e receptores. Permite gerenciar filas, captar informações essenciais e divulgar campanhas, incentivando a participação e ampliando o alcance das doações de sangue de forma eficiente e solidária.
 author: Rafael Felipe de Souza
 categories: Blog
-tags: ["ADS", "PR", "Saude", "Tecnologia"]
+tags: ["ADS", "Saude", "Tecnologia"]
 linkweb: http://152.67.51.142/
 date: 2025-07-19 
 ---
