@@ -1,15 +1,15 @@
 {
-  "name": "TailBliss",
-  "version": "0.1.1",
-  "description": "Hugo + Alpine.js + TailwindCSS",
+  "name": "appstore-computacao-unifil",
+  "version": "1.0.0",
+  "description": "Este projeto tem como objetivo apresentar os aplicativos desenvolvidos pelos alunos de Computação. Os projetos abordam problemas reais da comunidade, demonstrando a aplicabilidade prática de suas habilidades e o impacto positivo da tecnologia na sociedade.",
   "main": "index.js",
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
     "alpinejs": "^3.13.5",
-    "autoprefixer": "^10.4.17",
+    "autoprefixer": "^10.4.21",
     "concurrently": "^8.2.2",
-    "postcss": "^8.4.34",
-    "postcss-cli": "^11.0.0",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "tailwindcss": "^3.4.1"
   },
   "scripts": {
