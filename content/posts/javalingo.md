@@ -2,7 +2,7 @@
 title: "JavaLingo"
 draft: false
 language: pt-br
-featured_image: "/assets/javalingo.jpeg"  
+featured_image: images/featured/javalingo.jpeg  
 summary: Jogo educacional gamificado para tornar o aprendizado de lógica de programação e linguagem Java mais envolvente e interativo. Com progresso, níveis e loja de skins."
 author: Unifil
 categories: ["Blog"]
