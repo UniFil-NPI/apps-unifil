@@ -1,15 +1,13 @@
 ---
 title: "Inclusio – Plataforma de Currículos Acessíveis"
-summary: Plataforma web e mobile que simplifica a criação de currículos para quem tem pouca familiaridade com tecnologia, oferecendo modelos personalizáveis e geração instantânea de PDF.
-featured_image: images/featured/inclusio.jpg
-
-date: 2025-07-09
 draft: false
 language: pt-br
+featured_image: images/featured/inclusio.jpg
+summary: Plataforma web e mobile que simplifica a criação de currículos para quem tem pouca familiaridade com tecnologia, oferecendo modelos personalizáveis e geração instantânea de PDF.
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "Educação", "Tecnologia"]
-linkweb: https://inclusio.vercel.app/                                         
+linkweb: https://inclusio.on-forge.com/                                         
 linkblog: https://inclusio.netlify.app/                                            
 linkvideo: https://www.youtube.com/watch?v=1rbgNpryxMQ&ab_channel=AdersonSilva                                          
 ---
@@ -35,7 +33,7 @@ Na **Inclusio**, acreditamos que todos merecem a oportunidade de apresentar seu 
 - AngularJS
 - Laravel
 - PHP
-- Postgre
+- Postgres
 
 
 

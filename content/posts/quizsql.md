@@ -1,7 +1,7 @@
 ---
 title: "QuizSQL"
 summary: O QuizSQL é um aplicativo interativo desenvolvido para testar e aprimorar seus conhecimentos em SQL e bancos de dados relacionais. Ideal para estudantes e profissionais de tecnologia que desejam reforçar o aprendizado de forma prática e divertida.
-featured_image: images/featured/quizsql.png
+featured_image: images/featured/QuizSQL.png
 
 date: 2025-10-30
 important: 1
@@ -9,7 +9,7 @@ draft: false
 language: pt-br
 author: Unifil
 categories: Blog
-tags: ["CC", "ES", "ADS", "BD", "SQL", "Educação", "Tecnologia", "Quiz"]
+tags: ["CC", "ES", "ADS", "Educação", "Tecnologia", "Quiz"]
 linkweb: http://137.131.194.122/
 linkblog: https://quizsql.blogspot.com/
 linkvideo: https://youtu.be/f_KRBN7ssjE
