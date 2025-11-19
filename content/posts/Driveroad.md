@@ -1,8 +1,8 @@
 ---
-title: "Driveroad"
+title: "DriveRoad"
 draft: false
 language: pt-br
-featured_image: images/featured/Driveroad.png
+featured_image: images/featured/DriveRoad.png
 summary: O DriveRoad é um site que oferece conteúdo teórico sobre direção, abrangendo as áreas de mecânica, sinalização e legislação de trânsito. Além disso, disponibiliza simulados para auxiliar estudantes na preparação para provas teóricas de habilitação.
 author: Giovane Abrantes Bonache
 categories: Blog

@@ -7,7 +7,7 @@ date: 2025-10-30
 important: 1
 draft: false
 language: pt-br
-author: Unifil
+author: UniFil
 categories: Blog
 tags: ["CC", "ES", "ADS", "Educação", "Tecnologia", "Quiz"]
 linkweb: http://137.131.194.122/
