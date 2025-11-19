@@ -2,7 +2,7 @@
 title: "Remediou"
 draft: false
 language: pt-br
-featured_image: images/featured/Remediou.png
+featured_image: images/featured/Remediou.jpg
 summary: O aplicativo que cuida de você, com lembretes inteligentes para medicamentos e agendamento de consultas.
 author: Remediou
 categories: Saúde
