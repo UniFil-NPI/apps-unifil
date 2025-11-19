@@ -7,7 +7,10 @@ summary: O aplicativo Comida Segura ajuda pessoas com restrições alimentares a
 author: Unifil
 categories: Blog
 tags: ["CC", "ES", "ADS", "Saúde", "Tecnologia"] 
-linkweb: http://168.138.133.84/
+linkandroid: http://168.138.133.84
+linkios: http://168.138.133.84
+linkweb: http://168.138.133.84
+linkblog: https://blog.unifil.br/comidasegura
 ---
 
 # Comida Segura 🥗
