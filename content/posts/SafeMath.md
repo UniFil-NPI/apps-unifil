@@ -1,4 +1,5 @@
 ---
+date: 2025-12-15
 title: "SafeMath"
 draft: false
 language: pt-br

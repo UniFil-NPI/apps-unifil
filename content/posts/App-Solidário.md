@@ -1,4 +1,5 @@
 ---
+date: 2026-06-15
 title: "App Solidário"
 draft: false
 language: pt-br

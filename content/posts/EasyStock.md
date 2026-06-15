@@ -1,4 +1,5 @@
 ---
+date: 2026-03-27
 title: "EasyStock"
 draft: false
 language: pt-br

@@ -1,4 +1,5 @@
 ---
+date: 2025-11-04
 title: "Dungeons Quiz"
 draft: false
 language: pt-br

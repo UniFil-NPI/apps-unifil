@@ -1,4 +1,5 @@
 ---
+date: 2025-12-03
 title: "EcoÁgua 💧"
 draft: false
 important: 1

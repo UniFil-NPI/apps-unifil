@@ -1,4 +1,5 @@
 ---
+date: 2025-11-19
 title: "ClassHub"
 draft: false
 language: pt-br

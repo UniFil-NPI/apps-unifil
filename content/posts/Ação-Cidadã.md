@@ -1,4 +1,5 @@
 ---
+date: 2025-10-29
 title: "Ação Cidadã"
 draft: false
 language: pt-br

@@ -1,4 +1,5 @@
 ---
+date: 2026-06-11
 title: "Ran Out Of"
 draft: false
 language: pt-br

@@ -1,4 +1,5 @@
 ---
+date: 2025-11-19
 title: "Site - Pensamento Computacional UniFil"
 draft: false
 language: pt-br

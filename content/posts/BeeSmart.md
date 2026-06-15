@@ -1,4 +1,5 @@
 ---
+date: 2025-11-04
 title: "Bee Smart"
 draft: false
 language: pt-br

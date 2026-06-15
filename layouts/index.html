@@ -1164,8 +1164,8 @@
     {{ range $uniqueTags }}
     {{ if not (in (slice "CC" "ES" "ADS" "IA") .) }}
     <a href="/tags/{{ lower . }}/"
-      class="inline-block px-4 py-2 shadow-lg mb-2 text-center w-full relative bg-orange-button"
-      style="box-shadow: inset 0 0 50px #ff9f04;">
+      class="inline-block px-4 py-2 shadow-lg mb-2 text-center w-full relative font-bold"
+      style="background-color: #f1641f;">
       <span>{{ title . }}</span>
     </a>
     {{ end }}

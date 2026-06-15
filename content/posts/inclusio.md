@@ -1,4 +1,5 @@
 ---
+date: 2025-06-25
 title: "Inclusio – Plataforma de Currículos Acessíveis"
 draft: false
 language: pt-br

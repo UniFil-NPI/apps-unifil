@@ -1,4 +1,5 @@
 ---
+date: 2026-06-15
 title: "Interrogatio"
 draft: false
 language: pt-br

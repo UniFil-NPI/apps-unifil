@@ -1,4 +1,5 @@
 ---
+date: 2025-11-19
 title: XY Tools
 draft: false
 language: pt-br

@@ -1,4 +1,5 @@
 ---
+date: 2025-11-19
 title: "Troca Treco"
 draft: false
 language: pt-br
