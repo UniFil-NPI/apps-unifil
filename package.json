@@ -4,7 +4,7 @@
   "description": "Este projeto tem como objetivo apresentar os aplicativos desenvolvidos pelos alunos de Computação. Os projetos abordam problemas reais da comunidade, demonstrando a aplicabilidade prática de suas habilidades e o impacto positivo da tecnologia na sociedade.",
   "main": "index.js",
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.10",
+    "@tailwindcss/typography": "^0.5.20",
     "alpinejs": "^3.13.5",
     "autoprefixer": "^10.4.21",
     "concurrently": "^8.2.2",
