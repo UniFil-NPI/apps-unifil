@@ -1,0 +1,17 @@
+{{- $index := slice -}}
+{{- range where .Site.RegularPages "Section" "posts" -}}
+  {{- $img := "" -}}
+  {{- with .Params.featured_image -}}
+    {{- with resources.Get . -}}
+      {{- $img = (.Resize "80x webp q70").RelPermalink -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $index = $index | append (dict
+    "title" .Title
+    "permalink" .RelPermalink
+    "summary" (.Params.summary | default "")
+    "tags" (.Params.tags | default slice)
+    "image" $img
+  ) -}}
+{{- end -}}
+{{- $index | jsonify -}}
